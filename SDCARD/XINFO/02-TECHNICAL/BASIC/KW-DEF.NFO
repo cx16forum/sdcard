@@ -1,0 +1,23 @@
+<TAG:TOP>
+<XLI:BASIC/INDEX.NFO,BACK> BASIC Guide<CON:0D>
+<CON:0D>
+<CON:9E>DEF<CON:05>: Define Calculation as Named Function<CON:0D>
+<CON:0D>
+<TLI:EXAMPLE,EXAMPLE><CON:0D>
+<CON:0D>
+<CON:9A>DESCRIPTION<CON:05><CON:0D>
+<CON:0D>
+The DEF statement defines a calculation as a named function that can be called by BASIC later.  This is useful for complex calculations that a program does multiple times.  The DEF statement is followed by the function name, which must be FN followed by one or two other characters that make up a legal variable name.  This name is followed by a set of parentheses enclosing a legal numeric variable name.  This is followed by an equals sign and the formula you want to define, using the variable in the parentheses like any other variable would be used.
+<CON:0D>
+<CON:0D>
+<TAG:EXAMPLE>Example usage of [DEF]:<CON:0D>
+<CON:0D>
+<CON:FF>10 DEF FNC(R)=2*R*π REM CIRCUMFERENCE OF  A CIRCLE<CON:0D>
+<CON:FF>20 DEF FNA(R)=π*(R↑2) REM AREA OF  A CIRCLE<CON:0D>
+<CON:FF>30 PRINT "CIRCUMFERENCE:", FNC(10)<CON:0D>
+<CON:FF>40 PRINT "AREA:", FNA(10)<CON:0D>
+<CON:0D>
+Only a single variable can be defined as an argument to a function.  The defined function can be used anywhere a BASIC function can normally be used.
+<CON:0D>
+<TLI:TOP,TOP> Back to Top
+<CON:0D>

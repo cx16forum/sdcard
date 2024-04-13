@@ -1,0 +1,91 @@
+<TAG:TOP>
+<XLI:INDEX.NFO,START> Start of Guide<CON:0D>
+<CON:0D>
+<CON:9C>C<CON:9A>om<CON:9F>ma<CON:99>nd<CON:9E>e<CON:1C>r<CON:05> X16 Memory Map<CON:0D>
+<CON:FE>
+<CON:0D>
+Main memory map addresses ($=HEXIDECMAL)<CON:0D>
+<CON:0D>
+<CON:FF><TLINK:ZEROPAGE          ,ZERO-PAGE>  $0000-$00FF (256 byte)<CON:0D>
+<CON:FF><TLINK:CPUSTACK          ,CPU-STACK>  $0100-$01FF (256 byte)<CON:0D>
+<CON:FF><XLINK:MEMORY/SYSVARS.NFO,SYS-VARS>   $0200-$03FF (512 byte)<CON:0D>
+<CON:FF><TLINK:GOLDEN            ,GOLDEN>     $0400-$07FF (1024 byte)<CON:0D>
+<CON:FF><TLINK:BASICRAM          ,BASIC-RAM>  $0800-$9EFF (38,656 byte)<CON:0D>
+<CON:FF><TLINK:HARDWAREIO        ,HARDWAREIO> $9F00-$9FFF (256 byte)<CON:0D>
+<CON:FF><TLINK:RAMBANK           ,RAM-BANK>   $A000-$BFFF (8,192 byte)<CON:0D>
+<CON:FF><TLINK:ROMBANK           ,ROM-BANK>   $C000-$FFFF (16,384 byte)<CON:0D>
+<CON:FF><XLINK:MEMORY/KERNAL.NFO ,KERNAL-SYS> $FEB1-$FFF3<CON:0D>
+<CON:0D>
+<CON:FD>
+<CON:0D>
+<TAG:ZEROPAGE>
+<CON:9F>$0000-$00FF<CON:05> ZERO PAGE<CON:0D>
+----------- (256 bytes)<CON:0D>
+<CON:FF><CON:9A>$0000      <CON:05> Current RAM Bank<CON:0D>
+<CON:FF><CON:9A>$0001      <CON:05> Current ROM Bank (ROM is 0-31, CARTRIDGE is 32-255)<CON:0D>
+<CON:FF><CON:9A>$0002-$0021<CON:05> R0-R15 for KERNAL API<CON:0D>
+<CON:FF><CON:9A>$0022-$007F<CON:05> Available to user (94 bytes)<CON:0D>
+<CON:FF><CON:9A>$0080-$009C<CON:05> Reserved KERNAL/DOS<CON:0D>
+<CON:FF><CON:9A>$009D-$00A8<CON:05> Reserved DOS/BASIC<CON:0D>
+<CON:FF><CON:9A>$00A9-$00D3<CON:05> Math Library (BASIC)<CON:0D>
+<CON:FF><CON:9A>$00D4-$00FF<CON:05> Used by BASIC<CON:0D>
+<CON:0D>
+<TLINK:TOP,TOP> Back to main memory map.<CON:0D>
+<CON:0D>
+<TAG:CPUSTACK>
+<CON:9F>$0100-$01FF<CON:05> CPU STACK<CON:0D>
+----------- (256 bytes)<CON:0D>
+For storing register values like PC, A, B, such as across jumped-to subroutines.<CON:0D>
+<CON:0D>
+<CON:0D>
+<TLINK:TOP,TOP> Back to main memory map.<CON:0D>
+<CON:0D>
+<TAG:GOLDEN>
+<CON:9F>$0400-$07FF<CON:05> "Golden RAM" user-defined<CON:0D>
+----------- (1024 bytes)<CON:0D>
+Short machine language programs can go here without interfering with BASIC.<CON:0D>
+<CON:0D>
+<CON:0D>
+<TLINK:TOP,TOP> Back to main memory map.<CON:0D>
+<CON:0D>
+<TAG:BASICRAM>
+<CON:9F>$0800-$9EFF<CON:05> BASIC program and user-variables<CON:0D>
+----------- (38,656 bytes)<CON:0D>
+"LO-RAM" (can be used by ML or BASIC programs)<CON:0D>
+<CON:0D>
+<TLINK:TOP,TOP> Back to main memory map.<CON:0D>
+<CON:0D>
+<TAG:HARDWAREIO>
+<CON:9F>HARDWARE I/O MAPS<CON:05><CON:0D>
+----------------- (256 bytes)<CON:0D>
+<CON:FF><CON:9A>$9F00-$9F0F<CON:05> VIA IO #1 (16 bytes, 8MHz)<CON:0D>
+<CON:FF><CON:9A>$9F10-$9F1F<CON:05> VIA IO #2 (16 bytes, 8MHz)<CON:0D>
+<CON:FF><CON:9A>$9F20-$9F3F<CON:05> VERA VIDEO (32 bytes, 8MHz)<CON:0D>
+<CON:FF><CON:9A>$9F40-$9F41<CON:05> YM2151 AUDIO (2 bytes, 2MHz)<CON:0D>
+<CON:FF><CON:9A>$9F42-$9F5F<CON:05> (RESERVED) (30 bytes)<CON:0D>
+<CON:FF><CON:9A>$9F60-$9F7F<CON:05> EXPANSION IO3 (32 bytes, 8MHz)<CON:0D>
+<CON:FF><CON:9A>$9F80-$9F9F<CON:05> EXPANSION IO4 (32 bytes, 8MHz)<CON:0D>
+<CON:FF><CON:9A>$9FA0-$9FBF<CON:05> EXPANSION IO5 (32 bytes, 2MHz)<CON:0D>
+<CON:FF><CON:9A>$9FC0-$9FDF<CON:05> EXPANSION IO6 (32 bytes, 2MHz)<CON:0D>
+<CON:FF><CON:9A>$9FE0-$9FFF<CON:05> EXPANSION IO7 (32 bytes, 2MHz)<CON:0D>
+<CON:0D>
+<TLINK:TOP,TOP> Back to main memory map.<CON:0D>
+<CON:0D>
+<TAG:RAMBANK>
+<CON:9F>$A000-$BFFF<CON:05> Banked RAM<CON:0D>
+----------- (8,192 bytes)<CON:0D>
+Represented by BANK $00-$FF (for 2MB systems), $00-$3F (for 512KB systems).<CON:0D>
+<CON:0D>
+(BANK $00 is system reserved; on system startup BANK $01 is used as the initial/default)<CON:0D>
+<CON:0D>
+<CON:0D>
+<TLINK:TOP,TOP> Back to main memory map.<CON:0D>
+<CON:0D>
+<TAG:ROMBANK>
+<CON:9F>$C000-$FFFF<CON:05> Banked ROM (based on ROM index at $0001)<CON:0D>
+----------- (16,384 bytes)<CON:0D>
+(ROM bank 0-14 are currently assigned to various system software, such XEDIT, KERNAL MENU, CMDR-DOS)<CON:0D>
+ROM bank #6 is where the system PETSCII and ISO characters sets originate from (they are copied into VRAM)<CON:0D>
+<CON:0D>
+<TLINK:TOP,TOP> Back to main memory map.<CON:0D>
+<CON:0D>

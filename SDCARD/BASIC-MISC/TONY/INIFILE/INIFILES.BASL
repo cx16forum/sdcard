@@ -1,0 +1,139 @@
+DIM NV$(20), NN$(20),NV%,FV%
+
+CLS
+PRINT:PRINT:PRINT
+PRINT "ENTER AN INI FILENAME"
+INPUT F$
+GOSUB READINI
+CLS:PRINT
+IF NOT FE% THEN PRINT F$;" DOESN'T EXIST":PRINT:END
+
+IF NOT FV% THEN PRINT "NO INI INFORMATION FOUND":PRINT:END
+PRINT
+PRINT "FOUND";NV%;" INI VALUES.":PRINT
+PRINT "INIVAR",,"VALUE"
+PRINT "------",,"-----":PRINT
+FOR I = 1 TO NV%
+    PRINT NN$(I),,NV$(I)
+NEXT
+PRINT:END
+
+
+
+READINI:
+    NV%=0:FV%=0
+    GOSUB FILEEXISTS
+    IF NOT FE% THEN RETURN
+    FF$=F$+ ",S,R"
+    OPEN 4,8,4,FF$
+    DOINILOOP:
+        LINPUT#4, S$
+        GOSUB TRIM
+        GOSUB UCASE
+        IF LEFT$(S$,4)="REM " OR S$="" THEN CONTLOOP
+        GOSUB GETINIVAL
+        IF TN$="" THEN CONTLOOP
+        NV%=NV%+1
+        NN$(NV%)=TN$:NV$(NV%)=TV$
+    CONTLOOP:
+       IF ST=0 AND NV%<20 THEN DOINILOOP
+    CLOSE 4
+    FV%=(NV%>0)
+    RETURN
+
+
+
+GETINIVAL:
+       SC$="":TN$="":TV$=""
+       J=1
+  DOINIPARSE:
+       T$=MID$(S$,J,1)
+       IF T$="=" THEN GOTINI
+       SC$=SC$+T$
+       J=J+1:IF J>LEN(S$) THEN ENDINI
+       GOTO DOINIPARSE
+GOTINI:
+       J=J+1
+       TT$=S$
+       S$=SC$
+       SC$=""
+       GOSUB RTRIM
+       TN$=S$
+       S$=TT$
+  VALUEPARSE:
+       T$=MID$(S$,J,1)
+       SC$=SC$+T$
+       J=J+1:IF J>LEN(S$) THEN ENDINI
+       GOTO VALUEPARSE
+ENDINI:
+     TT$=S$
+     S$=SC$
+     GOSUB TRIM
+     TV$=S$
+     S$=TT$
+  RETURN
+
+UCASE:
+   IF S$="" THEN RETURN
+   SC$=""
+   FOR I=1 TO LEN(S$)
+       T$=MID$(S$,I,1)
+       C1=ASC(T$)
+       IF C1>=97 AND C1<=122 THEN C1=C1-32
+       SC$=SC$+CHR$(C1)
+   NEXT I
+   S$=SC$
+   RETURN
+
+TRIM:
+  GOSUB LTRIM
+  GOSUB RTRIM
+  RETURN
+
+LTRIM:
+    IF S$="" THEN RETURN
+    I=1:C1=0
+DOLOOP:
+    T$=MID$(S$,I,1)
+    X=ASC(T$)
+    IF X > 32 THEN LSTR
+    C1=C1+1
+   I=I+1
+   IF I>LEN(S$) THEN LSTR
+   GOTO DOLOOP
+LSTR:
+   IF C1=LEN(S$) THEN S$=""
+   IF C1>0 AND C1<LEN(S$) THEN S$=MID$(S$,C1+1,LEN(S$)-C1)
+   RETURN
+
+RTRIM:
+    IF S$="" THEN RETURN
+    I=LEN(S$):C1=0
+DOLOOPR:
+    T$=MID$(S$,I,1)
+    X=ASC(T$)
+    IF X > 32 THEN RSTR
+    C1=C1+1
+    I=I-1
+    IF I<1 THEN RSTR
+    GOTO DOLOOPR
+RSTR:
+    IF C1=LEN(S$) THEN S$=""
+    IF C1>0 AND C1<LEN(S$) THEN S$=MID$(S$,1,LEN(S$)-C1)
+    RETURN
+
+
+
+
+
+
+FILEEXISTS:
+      X$=F$:FE%=0:X$=X$+",S,R"
+      OPEN 2,8,2,X$
+      CLOSE 2
+      OPEN 15,8,15
+      INPUT#15,X,X$
+      CLOSE 15
+      FE%=(X<=20)
+
+      RETURN

@@ -1,0 +1,57 @@
+<XLINK:TOC.NFO,TOC> Back to Table of Contents<CON:0D>
+<CON:0D>
+BASLOAD: BASIC LOAD<CON:0D>
+-------------------<CON:0D>
+<CON:0D>
+BASLOAD is an exclusive X16 project that significantly enhances the use of the traditional BASIC programming languages.<CON:0D>
+<CON:0D>
+While line numbers were a "necessary evil" to help be able to implement BASIC and interact with the code (e.g. "LIST 50-100" instead of using addresses), BASIC programs quickly become "speghetti" and difficult to expand and modify after about 100 lines in most casual uses.<CON:0D>
+<CON:0D>
+Some great programs have reached 1000 lines with great care, such as carefully documenting usage of variable names.  But the issue of being able to expand and modify the program remains a challenge.  As BASIC is assigned a portion of 32KB RAM, it is estimated that the longest possible BASIC program is about 6000 lines long.<CON:0D>
+<CON:0D>
+By the mid-1980s, systems became more capable and with enough memory to afford proper text editors.  Meaning, editors that can buffer several screens worth of content, and support scrolling and PGUP/PGDN.  In 1985, Microsoft introduced QuickBASIC, which was an expanded flavor of traditional BASIC that didn't require line numbers.<CON:0D>
+<CON:0D>
+BASLOAD is similar to QuickBASIC, but to conserve resources, BASLOAD still uses the internal System ROM version of X16 BASIC to conduct the actual runtime.  This means BASLOAD is not really a "new language" but rather a different kind of "front end" to BASIC.<CON:0D>
+<CON:0D>
+Essentially, BASLOAD is mostly identical to X16 BASIC in terms of keywords and syntax, except that no line numbers are required.  You pass a filename into BASLOAD that contains a BASIC program (without line numbers), and BASLOAD will "insert" and determine the line numbers for you that is a "tokenized BASIC" version of the original BASLOAD input.  The only main syntax difference is that BASLOAD allows you to define labels that are up to 12 characters.
+<CON:0D>
+The following is an example of "traditional BASIC" versus BASLOAD:<CON:0D>
+<CON:0D>
+<CON:FF>BASIC                  | BASLOAD<CON:0D>
+<CON:FE>
+<CON:FF>10 GET A$              | GEToAGAIN:<CON:0D>
+<CON:FF>20 A=ASC(A$)           |   GET A$<CON:0D>
+<CON:FF>30 IF A=0 THEN GOTO 10 |   A=ASC(A$)<CON:0D>
+<CON:FF>40 PRINT A             |   IF A=0 THEN GOTO GEToAGAIN<CON:0D>
+<CON:FF>50 GOTO 10             |   PRINT A<CON:0D>
+<CON:FF>                       |   GOTO GEToAGAIN<CON:0D>
+<CON:0D>
+By using symbolic labels, BASLOAD allows you to easily relocate code, and use more descriptive labels to infer the purpose of that code.  These descriptions become useful tags for Text Search, to help quickly find code.<CON:0D>
+<CON:0D>
+BASLOAD offers these benefits:<CON:0D>
+- The input file is a "plain text" file that can be written in any editor.<CON:0D>
+- GOTO, GOSUB, RESTORE labels can all be symbolic.<CON:0D>
+- Labels better describe the purpose of a section of code<CON:0D>
+- The BASIC generated out of BASLOAD excludes REM, allowing for smaller program results<CON:0D>
+<CON:0D>
+BASLOAD has these limitations:<CON:0D>
+- Labels limited to 12 characters<CON:0D>
+- Labels cannot contain - or _<CON:0D>
+- Labels should avoid BASIC keywords<CON:0D>
+<CON:0D>
+<CON:0D>
+USE OF BASLOAD<CON:0D>
+--------------<CON:0D>
+LOAD "BASLOAD.PRG"<CON:0D>
+RUN<CON:0D>
+Follow on screen instructions, specifically to type !L to load a BASLOAD input file.<CON:0D>
+When the BASLOAD input is specified, the tokenized result is placed in BASIC memory.<CON:0D>
+Be sure to save this tokenized result (e.g. SAVE"@:RESULT.PRG").<CON:0D>
+<CON:0D>
+Some tokenized results out of BASLOAD will be "exotic" BASIC programs that may load "machine code blobs" that may conflict with the resident addresses of BASLOAD.  In those cases, use of BASLOAD is fine, but it may be necessary to save the PRG result and reset (to "unload BASLOAD") prior to running the tokenized BASIC version.<CON:0D>
+<CON:0D>
+One strategy for using BASLOAD during development, if using the X16 emulator, is to use two instances of the X16 emulator: one instance for invoking BASLOAD (with the 300% speed boost) and another instance for loading the BASIC PRG tokenized result out of BASLOAD.<CON:0D>
+<CON:0D>
+ROM VERSION OF BASLOAD:<CON:0D>
+Type MENU to access the system menu and BASLOAD is listed there, making it immediately available from any folder.<CON:0D>
+<CON:0D>

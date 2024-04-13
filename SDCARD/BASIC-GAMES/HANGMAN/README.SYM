@@ -1,0 +1,122 @@
+BASLOAD 0.1.1 SYMBOL FILE
+
+
+
+LABELS
+------
+FILE: README.BAS
+
+ 000021 SHOW                                                =17;
+ 000024 WAITKEY                                             =19;
+ 000035 READDONE                                            =28;
+ 000039 SHOWSECTION                                         =30;
+ 000041 RETRY                                               =31;
+ 000049 DOLOAD                                              =38;
+ 000057 DONESECTION                                         =45;
+ 000062 FILEEXISTS                                          =48;
+ 000066 FIXCURSOR                                           =50;
+ 000073 ERRORHALT                                           =54;
+ 000077 FLUSH                                               =57;
+ 000079 KEYPRESS                                            =58;
+ 000083 GETFROMMENU                                         =60;
+ 000090 POKEFASTFWD                                         =65;
+ 000095 FASTFWD650                                          =67;
+ 000100 SETREGVARS                                          =70;
+
+
+
+VARIABLES
+---------
+FILE: README.BAS
+
+ 000006 C.REG                                               =A;
+ 000007 SET.MEM                                             =A0;
+ 000008 LAST.BANK                                           =A1;
+ 000008 A.REG                                               =A2;
+ 000010 BANKS.AVAILABLE                                     =A3;
+ 000011 NEXT.BANK                                           =A4;
+ 000015 F                                                   =A5;
+ 000016 FE                                                  =A6;
+ 000019 DM                                                  =A7;
+ 000020 FILE.SECTION                                        =A8;
+ 000025 X                                                   =A9;
+ 000026 SS                                                  =AA;
+ 000027 K                                                   =AB;
+ 000036 FROM.MENU                                           =AC;
+ 000042 VERA.DCVIDEO                                        =AD;
+ 000042 LAYER1.OFF                                          =AE;
+ 000045 TL                                                  =AF;
+ 000046 Y.REG                                               =AG;
+ 000047 X.REG                                               =AH;
+ 000050 L                                                   =AI;
+ 000052 EOF                                                 =AJ;
+ 000058 LAYER1.ON                                           =AK;
+ 000063 A                                                   =AL;
+ 000063 B                                                   =AM;
+ 000067 FBASE                                               =AN;
+ 000084 OLD.BANK                                            =AO;
+ 000084 S                                                   =AP;
+ 000085 ADDR                                                =AQ;
+ 000086 I                                                   =AR;
+ 000092 C                                                   =AS;
+ 000106 R0L                                                 =AT;
+ 000106 R0H                                                 =AU;
+ 000106 R0                                                  =AV;
+ 000107 R1L                                                 =AW;
+ 000107 R1H                                                 =AX;
+ 000107 R1                                                  =AY;
+ 000108 R2L                                                 =AZ;
+ 000108 R2H                                                 =B;
+ 000108 R2                                                  =B0;
+ 000109 R3L                                                 =B1;
+ 000109 R3H                                                 =B2;
+ 000109 R3                                                  =B3;
+ 000110 R4L                                                 =B4;
+ 000110 R4H                                                 =B5;
+ 000110 R4                                                  =B6;
+ 000111 R5L                                                 =B7;
+ 000111 R5H                                                 =B8;
+ 000111 R5                                                  =B9;
+ 000112 R6L                                                 =BA;
+ 000112 R6H                                                 =BB;
+ 000112 R6                                                  =BC;
+ 000113 R7L                                                 =BD;
+ 000113 R7H                                                 =BE;
+ 000113 R7                                                  =BF;
+ 000114 R8L                                                 =BG;
+ 000114 R8H                                                 =BH;
+ 000114 R8                                                  =BI;
+ 000115 R9L                                                 =BJ;
+ 000115 R9H                                                 =BK;
+ 000115 R9                                                  =BL;
+ 000116 R10L                                                =BM;
+ 000116 R10H                                                =BN;
+ 000116 R10                                                 =BO;
+ 000117 R11L                                                =BP;
+ 000117 R11H                                                =BQ;
+ 000117 R11                                                 =BR;
+ 000118 R12L                                                =BS;
+ 000118 R12H                                                =BT;
+ 000118 R12                                                 =BU;
+ 000119 R13L                                                =BV;
+ 000119 R13H                                                =BW;
+ 000119 R13                                                 =BX;
+ 000120 R14L                                                =BY;
+ 000120 R14H                                                =BZ;
+ 000120 R14                                                 =C;
+ 000121 R15L                                                =C0;
+ 000121 R15H                                                =C1;
+ 000121 R15                                                 =C2;
+ 000122 CHKOUT                                              =C3;
+ 000122 CHKIN                                               =C4;
+ 000122 CLRCHN                                              =C5;
+ 000123 MCIOUT                                              =C6;
+ 000123 MACPTR                                              =C7;
+ 000124 VERA.DATA0                                          =C8;
+ 000124 VERA.DATA1                                          =C9;
+ 000124 VERA.CTRL                                           =CA;
+ 000126 LAYER0.ON                                           =CB;
+ 000127 LAYER0.OFF                                          =CC;
+ 000130 FB.CURSOR.POSITION                                  =CD;
+ 000131 FB.CURSOR.NEXTLINE                                  =CE;
+ 000132 SCREEN.SIZE                                         =CF;

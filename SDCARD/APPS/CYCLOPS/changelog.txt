@@ -1,0 +1,16 @@
+Version 1.1
+
+1) Deleted read/write switch.
+2) Added Input/Output Enable indicator LEDs, red=disabled, green=enabled
+3) Replaced display of RAM contents, from simple byte value, to a disassembly of that byte.
+4) Changed behavior of single step mode to more closely model the rising/falling edge of the system clock. Rising edge reads memory, falling edge executes instruction.
+5) Write flag now follows the rising/falling edge concept and stays lit appropriately, to make it easier to follow what is going on.
+6) Slowed execution of the 'slow' settting
+7) Additional program optimization.
+8) Added hook to run Stefan Jakobsson's X16Edit text editor, HIRAM version, if loaded, to create or edit a source file, when clicking on the filename to load a new program. Currently this must already have been loaded into memory by the user.
+
+Version 1.2
+
+1) Now supports both X16edit HIRAM and ROM versions.
+2) additional optimizations, fastest speed is now nearly 2.5x faster than version 1.
+3) various fixes.

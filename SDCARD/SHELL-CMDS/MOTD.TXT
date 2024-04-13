@@ -1,0 +1,16 @@
+
+C O M M A N D E R
+ú.     .  .   ... 
+ö..   .. ..  .   .
+ü..   ..  .  .    
+ô .. ..   .  .... 
+û  . .    .  .   .
+Å .. ..   .  .   .
+ .   .  ...  ... 
+
+[üls] to list directory.
+[ücd <folder>] to change directory.
+[üexit] to return to CMDR-DOS.
+[ühelp] to see additional commands.
+[ücd /] and [ülaunch] to run the launcher.
+--------------------------------------------

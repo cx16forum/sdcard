@@ -1,0 +1,28 @@
+<XLINK:TOC.NFO,TOC> Back to Table of Contents<CON:0D>
+<CON:0D>
+If you are interested in becoming a software developer for the Commander X16 systems, there are a variety of tools to help get started:<CON:0D>
+<CON:0D>
+<CON:FF>- ROM BASIC / BASLOAD (on system)<CON:0D>
+<CON:FF>- cc65     (https://github.com/cc65/cc65)<CON:0D>
+<CON:FF>- P65Pas   (https://github.com/t-edson/P65Pas)<CON:0D>
+<CON:FF>- BitMagic (https://github.com/Yazwh0/BitMagic)<CON:0D>
+<CON:FF>- Prog8    (https://github.com/irmen/prog8)<CON:0D>
+<CON:FF>- acme / 64tass / ca65 (assembler)<CON:0D>
+<CON:FF>- ASMEDIT (on system assembler)<CON:0D>
+<CON:0D>
+The System ROM, official emulator, and X16 Technical References are available on github (search "x16community").<CON:0D>
+<CON:FF>https://github.com/x16community/<CON:0D>
+<CON:0D>
+There are also a variety of image-to-X16 conversion tools and scripts for creating backgrounds, tile/sprite editors, PETSCII editors, Paint tools, ZSM editors.<CON:0D>
+<CON:0D>
+For the latest information, refer to one of these media-relations resources to learn more:<CON:0D>
+<CON:0D>
+<CON:FF>Front page: https://commanderx16.com<CON:0D>
+<CON:FF>Forums:     https://cx16forum.com<CON:0D>
+<CON:FF>Reddit:     https://www.reddit.com/r/CommanderX16/<CON:0D>
+<CON:FF>Discord:    https://discord.gg/nS2PqEC<CON:0D>
+<CON:0D>
+<CON:FF>Facebook: https://www.facebook.com/groups/CommanderX16<CON:0D>
+<CON:FF>Twitter:  https://twitter.com/CommanderX16Off<CON:0D>
+<CON:FF>Texelec:  https://texelec.com<CON:0D>
+<CON:0D>

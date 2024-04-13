@@ -1,0 +1,25 @@
+<XLINK:TOC.NFO,TOC> Back to Table of Contents<CON:0D>
+<CON:0D>
+HEXEDIT<CON:0D>
+-------<CON:0D>
+<CON:0D>
+HEXEDIT is a software utility included in one of the System ROM slots.<CON:0D>
+<CON:0D>
+HEXEDIT is started by typing MENU and selecting HEXEDIT from that menu.  HEXEDIT will adapt to the text mode screen resolution you use when starting that software.  It does this through a clever use of custom fonts, including a "reverse" font to highlight begin/end markings (which you can use to quickly clear a region).<CON:0D>
+<CON:0D>
+When HEXEDIT is activated, press <CON:9A>H<CON:05> to see a list of HELP commands.  Remember in this help, you can <CON:9A>PGDN<CON:05> to see extended commands.<CON:0D>
+<CON:0D>
+<CON:9A>F1<CON:05> cycles between "sources" of what is being edited: SYSTEM is RAM, V-RAM is Video RAM, FILE is the currently  designated file.<CON:0D>
+<CON:0D>
+File editing can be a little confusing:  First, you can only edit a file that is in the current folder from which you started HEXEDIT.  Also you must remember the name of the file, as HEXEDIT currently has no file manager/selector type provision.  Press F1 till it says FILE on the bottom left, then do SHIFT+L to specify the filename to load.  The other confusing aspect is you might not know exactly where the end of the file is located at.<CON:0D>
+<CON:0D>
+One suggestion is to use the begin/end marking and to clear the file content region before loading the file.  Other suggestion is that generally you would be editing binary files, of a format that you are probably familiar with, and would know where the end of the file is at just based on the expected offset.<CON:0D>
+<CON:0D>
+Use <CON:9A>F3<CON:05> to cycle character set modes, to whatever is suitable for what you are editing (PETSCII, ASCII/ISO, or direct screen codes).<CON:0D>
+<CON:0D>
+In V-RAM source mode, <CON:9A>F2<CON:05> bank will cycle between bank 0 and 1 only.<CON:0D>
+<CON:0D>
+In SYSTEM source mode, pressing <CON:9A>F2<CON:05> bank will prompt for which bank you want to use (00 to FF).  In this source mode, remember that any changes you type are applied immediately to System RAM, so be careful which addresses you manipulate.<CON:0D>
+<CON:0D>
+<CON:0D>
+<CON:0D>

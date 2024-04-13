@@ -1,0 +1,12 @@
+<TAG:TOP>
+<XLI:BASIC/INDEX.NFO,BACK> BASIC Guide<CON:0D>
+<CON:0D>
+<CON:9E>BOOT<CON:05>: Load and run AUTOBOOT.X16<CON:0D>
+<CON:0D>
+<CON:9A>DESCRIPTION<CON:05><CON:0D>
+<CON:0D>
+The BOOT command loads and runs a PRG file named AUTOBOOT.X16 from device #8 (the SD card reader). If the file is not found, nothing is done and no error is printed.
+<CON:0D>
+<CON:0D>
+<TLI:TOP,TOP> Back to Top
+<CON:0D>

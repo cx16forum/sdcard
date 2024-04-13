@@ -1,0 +1,76 @@
+<TAG:TOP>
+<CON:FC>(F1 for help using XINFO guide)<CON:0D>
+<CON:0D>
+<CON:0D>
+<CON:FC><CON:9F>Ultimate File Manager v0.4b<CON:05><CON:0D>
+<CON:0D>
+<CON:0D>
+<CON:FC>User Guide<CON:0D>
+<CON:0D>
+<CON:0D>
+<CON:9E>1. What is UFM?<CON:05><CON:0D>
+UFM is a Norton Commander style filemanager which let you manage all your files and directories. UFM is developed using ca65.<CON:0D>
+<CON:0D>
+<CON:9E>2. Main features<CON:05><CON:0D>
+<CON:0D>
+- Browse through directories and files<CON:0D>
+- Copy, Rename, Move and Delete files<CON:0D>
+- Rename and Delete directories<CON:0D>
+- Launch tokenized basic files <CON:0D>
+- Launch Machine Language files<CON:0D>
+- Return to UFM automaticly when a launched program finishes<CON:0D>
+- Support for (SNES)-controller<CON:0D>
+<CON:0D>
+<CON:9E>3. Keys<CON:05><CON:0D>
+- Arrow Down: move pointer one line down<CON:0D>
+- Arrow Up:   move pointer one line up<CON:0D>
+- Page Down:  move pointer one list size down<CON:0D>
+- Page Up:    move pointer one list size up<CON:0D>
+- Home:       move pointer to first directory or file<CON:0D>
+- End:        move pointer to last directory of file<CON:0D>
+- Tab:        switch between left and right window<CON:0D>
+- Enter:      change to selected directory or launch selected file (if launchable)<CON:0D>
+- Backspace:  move one directory up<CON:0D>
+- F2:         display file info<CON:0D>
+- F3:         select device/partition<CON:0D>
+- F4:         edit file with xEdit<CON:0D>
+- F5:         copy selected file to directory in other window<CON:0D>
+- F6:         rename selected file<CON:0D>
+- F7:         move selected file to other directory<CON:0D>
+				!!currently only supported with hostfs.<CON:0D>
+				!!waiting for a rom update to enable moving on sd-card<CON:0D>
+- F8:         create directory<CON:0D>
+- F10:        Quit UFM<CON:0D>
+- Del:        delete selected file or directory<CON:0D>
+- Ctrl +      switch to next supported screen mode<CON:0D>
+- Ctrl -      switch to previous supported screen mode<CON:0D>
+<CON:0D>
+<CON:9E>4. Joystick/SNES controller<CON:05><CON:0D>
+UFM supports the use of a SNES controller plugged into port #1<CON:0D>
+Buttons:<CON:0D>
+- A:      change to selected directory or launch selected file (if launchable)<CON:0D>
+- B:      display action menu<CON:0D>
+- L:      switch to previous supported screen mode<CON:0D>
+- R:      switch to next supported screen mode<CON:0D>
+- Left/Right: switch to other window<CON:0D>
+- Down/Up:    move pointer to previous or next line<CON:0D>
+- Select:     change device/partition<CON:0D>
+Note: if an action requires user input, for example the name of a new directory or when renaming a file, the keyboard should be used.<CON:0D>
+
+<CON:9E>5. Supported screen modes:<CON:05><CON:0D>
+- 80x60<CON:0D>
+- 80x40<CON:0D>
+- 40x60<CON:0D>
+- 40x30<CON:0D>
+- 40x15<CON:0D>
+- 64x50<CON:0D>
+- 64x25<CON:0D>
+UFM adopts the screen mode the user is currently in.  If that screen mode is not supported, the user is prompted to choose a supported one.<CON:0D>
+<CON:0D>
+<CON:9E>5. Limitations<CON:05><CON:0D>
+- Launch&Return only works if program is <<30kb and does not use memory region $8000+<CON:0D>
+
+<CON:0D>
+<CON:0D>
+<TLINK:TOP,TOP> Back to top.<CON:0D>
+<CON:0D>

@@ -1,0 +1,16 @@
+{
+    "manifest_version": "1.0.0",
+    "name": "Ski",
+    "author": "Mark Wiedmann",
+    "app_version": "0.1.0",
+    "license": "private",
+    "start_prg": "SKI.PRG",
+    "resources": [
+        "C0L0.BIN",
+        "C0L1.BIN",
+        "C0FLAGS.BIN",
+        "SKI.PRG",
+        "SKITILES.BIN",
+        "SKITILES.PAL"
+   ]
+}

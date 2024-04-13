@@ -1,0 +1,104 @@
+<TAG:TOP>
+<XLINK:TOC.NFO,TOC> Back to Table of Contents<CON:0D>
+<CON:0D>
+<CON:9E>BASIC<CON:05>: Beginner's All Purpose Symbolic Instruction Code<CON:0D>
+<CON:0D>
+This article is not to teach BASIC, but is to give some background context about BASIC and why it is relevant to the X16 system.<CON:0D>
+<CON:0D>
+BASIC Origins: The Line Printers Days<CON:0D>
+<CON:FE>
+<CON:0D>
+The idea of the BASIC programming language began in the mid-1960s, at a time when a teletype and printer were how you interacted with a computer.  There were no affordable CRTs yet, and so ideas such as "clear screen" and "text mode" hadn't even been commonly developed yet.  But there was already the idea of assigning variables to memory addresses, specifying a formula, and having the computer execute that formula with varying values of those variables.  This was useful for domains such as banking (accounting/payroll), payment subscriptions (such as insurance, magazines), construction (material estimates), and engineering (physics modeling).  BASIC provided a convenient way to express these formulas in an interactive fashion.<CON:0D>
+<CON:0D>
+As a simple example, consider monthly compound interest.  The typical formula is: A=P*(1+r/n)^(n*t)<CON:0D>
+<CON:0D>
+For this example, we let P (principle) be $10,000 and r=9%.  Since this is monthly interest, n=12 (number of compounding periods), and say we want to know the total interest that will be paid over five years (t=5).<CON:0D>
+<CON:0D>
+In X16 BASIC, we could use the following to compute the answer to our question:<CON:0D>
+<CON:FF>P=10000:R=9/100:T=5:PRINT P*(1+R/12)^(12*T)-P<CON:0D>
+<CON:97>NOTE: The ^ symbol in X16 BASIC means "to the power of."<CON:05><CON:0D>
+<CON:0D>
+The above example uses the "immediate mode" of BASIC which does not require line numbers.  BASIC performs all its processing "in memory" so that it can be used on systems that lack any kind of file system.  Used in this way, BASIC is like an elaborate single line calculator.  But the concept of line numbers is used to enable BASIC to perform more extensive programming.  To expand upon the prior example, suppose you wanted to know the amount of interest per year.  This program could be represented as follows:<CON:0D>
+<CON:0D>
+<CON:FF>10 P=10000:R=9/100:T=5:CP=12<CON:0D>
+<CON:FF>20 FOR I = 1 TO T<CON:0D>
+<CON:FF>30 PRINT "YEAR";I,P*(1+R/CP)^(CP*I)-P<CON:0D>
+<CON:FF>40 NEXT I<CON:0D>
+<CON:0D>
+This program would provide a listing of the interest to be paid over each year of a loan.  From this, one could then determine a monthly payment plan.  While the program is physically stored in memory (RAM), users of the system can now refer to the program using these line numbers instead of whichever available memory storage address that BASIC decided to associate these lines with.  That is, unlike immediate mode, the program would now be "remembered" beyond the current screen-content and could be reviewed by using the LIST command.<CON:0D>
+<CON:0D>
+This is just an example of the concept of using BASIC to "RUN" a formula.  Because of precision and rounding issues related to the use of floating-point values, most actual financial software would use some form of BCD (binary-coded decimal) instead.<CON:0D>
+<CON:0D>
+As another example, consider the formulas used for projectile motion (such as the path of a kicked soccer ball or a fireworks display).  This formula takes vector components of an initial velocity (VI), applied to a given angle (A) and some initial height (H).  The gravity constant (G) is that of Earth, where the units used must match the units used for the initial velocity.  The height of this motion can be modeled by the following:<CON:0D>
+<CON:FF>y = h + vy*t - g*t^2/2<CON:0D>
+<CON:0D>
+The following is an example of a soccerball kick at 22mps^2 at 20degrees:<CON:0D>
+<CON:0D>
+<CON:FF>10 G=9.81:VI=22:A=20:DR=3.14159/180<CON:0D>
+<CON:FF>20 H=0:T=0:TD=0.2<CON:0D>
+<CON:FF>25 REM DR = DEGREE TO RADIAN CONVERT<CON:0D>
+<CON:FF>30 VX=VI*COS(A*DR)<CON:0D>
+<CON:FF>40 VY=VI*SIN(A*DR)<CON:0D>
+<CON:FF>50 X=VX*T<CON:0D>
+<CON:FF>60 Y=H+VY*T-G*(T^2)/2<CON:0D>
+<CON:FF>70 PRINT T,X,Y<CON:0D>
+<CON:FF>80 T=T+TD<CON:0D>
+<CON:FF>90 IF Y>=H THEN GOTO 50<CON:0D>
+<CON:0D>
+Mathematics has been in used for centuries.  How ever a given computer system works, the above program is a more symbolic representation of the intended computation, done in a way that is more familiar to those trained in mathematics: data input is assigned upfront (assigned to variables), various computations are performed (COS, SIN, multiply, etc.), and the results of interest are presented (PRINT) until some end condition is reached.  In this case, the end condition is that the projectile has returned below the initial height (H) that it was launched from.<CON:0D>
+<CON:0D>
+The above program shows that, under those conditions, the soccerball would take about 1.5 seconds to be kicked about 32 meters away, reaching a maximum height of about 2.8 meters.  To show the versality of the program, to model a fireworks launch, we can simply change the input parameters as follows:<CON:0D>
+<CON:FF>10 G=9.81:VI=70:A=88:DR=3.14159/180<CON:0D>
+That is, adjust the initial velocity (VI) to 70mps and angle to 88degrees.  From this, the results show the max height of 249meters is reached in about 7 seconds, which can help determine how long to set fuse for the report display.<CON:0D>
+<CON:0D>
+FORTRAN, COBOL, APL, BASIC were all initially used in this way, using countless stacks of paper since it was still the only available means at the time.  But this more immediate interaction with the system was a huge improvement over the batch processing used in the 1950s.  Still, the use of printers was very clearly inefficient (and noisy).<CON:0D>
+<CON:0D>
+The main point here is to explain the early history of BASIC, why it needed line numbers (as a means to abstract away from using memory addresses, since screen editors and row numbers was a concept that didn't exist yet), the idea of "immediate mode," and how BASIC was initially focused on general mathematically oriented problem-solving.<CON:0D>
+<CON:0D>
+<CON:0D>
+BASIC as an Operating System? (CMDR-DOS)<CON:0D>
+<CON:FE>
+The use of line-numbers allows BASIC to avoid needing to be a "two-pass" compiled language.  This allows the BASIC interpreter to be implemented in a very small amount of storage, generally varying between 4K and 16K depending on all the features included (for example, the initial Apple-1 INTEGER BASIC did not include support for any floating point types, while the IBM 5110 BASIC includes an extensive FORM keyword and string formatting options that it calls "pictures").<CON:0D>
+<CON:0D>
+When you type in a BASIC line of code, the screen itself is a temporary placeholder of that programming code.  This is why, typically, BASIC lines of code are limited to the width of the screen itself (in the case of the X16 BASIC, it is the width of the widest text mode which is 80-columns).  Once you press <CON:9E>RETURN<CON:05>, the systems maintains a linked-list of where your designated line of code is to be stored in memory.  That is, the tokenized code stored in memory is flanked by a "previous" and "next" pointer to those corresponding lines of code.<CON:0D>
+<CON:0D>
+When you <CON:9E>RUN<CON:05> your program, a couple things happen: (1) the equivalent of a CLR command is issued to reset all variables and arrays, then (2) each line of code is "tokenized" (if not done so already since last RUN) and then executed.  If there are errors during the "tokenization" of a line of code, then you will see an error code such as "SYNTAX ERROR" during the runtime of your program (which you can fix then, by referring to the line number, and then "CONT" {continue} your RUN).  As you remove or add lines of code, your program may not be stored in memory in the same physical order as the line numbers.  This can start to impact the runtime speed of the program, and so a "garbage collection" process is sometimes used to clean up the arrangement of the program in memory.<CON:0D>
+<CON:0D>
+Some earlier mainframe implementations of BASIC would tokenize the line of code as soon as you pressed RETURN, which means they could detect syntax errors more immediately.  This was an approach that made more sense during line-printers and early single line LED screens.  This also saves some memory by never having to store the full string length of a line of code, but can be disrupting as every line of code must be "correct" (syntax wise) before moving on.<CON:0D>
+<CON:0D>
+When most people think of BASIC, they generally think of the interpreter of the keywords (such as PRINT, FOR, and trig functions of SIN, COS, TAN, etc.).  But the interactive usage of BASIC is coordinated by another piece of System ROM software, which on the X16 we refer to as CMDR-DOS.  This software handles things like flashing the cursor, checking for system input commands (like CTRL+ALT+DEL), moving the cursor around the screen with arrow keys, maintains the system clock, and other such activities.  On the X16, these other activities include managing file handlers and device state.  Collectively, all these features is why CMDR-DOS can be thought of as a tiny operating system.  The main system interrupt service routine (ISR) can be extended to add user defined code.<CON:0D>
+<CON:0D>
+Even if there was no BASIC interpreter available, CMDR-DOS could still offer the command input prompt to process system commands like MENU, REBOOT, HELP, MONITOR, and facilitate listing files and navigating directories.  One of the earliest extensions to BASIC was to include support for SAVE/LOAD to a disk drive.  Once CRT screens became more affordable, each microcomputer system generally added custom BASIC keywords (like SCREEN, LINE, CIRCLE, or SOUND commands) to make it easier to interact with these new hardware peripherals (that didn't exist a decade earlier when BASIC was first developed).  This allowed the systems to become a full "development environment" with the text-mode screen itself acting as the main editor.<CON:0D>
+<CON:0D>
+The main point here is to explain that BASIC isn't just BASIC, but it is also a coordinating a "single-screen development environment" that helps editing BASIC programs (by maintaining text mode character position, and things like gamepad state, in easy to use keywords).  We generally say the system "boots to BASIC" though it is more accurate to say it boots to the "CMDR-DOS environment" that is a convenient immediate frontend to the BASIC programming interpreter.  This is another reason why BASIC ended up being very popular with microcomputer systems, since this "operating environment" could also be implemented on systems with very limited resources (such as under 16KB).<CON:0D>
+<CON:0D>
+<CON:0D>
+PEEK/POKE and SYS<CON:0D>
+<CON:FE>
+When BASIC was first developed, it was used in time-shared mainframes.  In such multi-user systems, direct access to main system memory can cause conflict with those time-shared processes.  But early microprocessors were more like handheld single user calculators.  So around 1973, the idea of several additional keywords to BASIC came about: PEEK, POKE, and SYS.  Some variations of BASIC used slightly different terms, but the main idea was POKE could explicitly set the value at an address in memory, PEEK could examine (read) those values, and SYS could be used to move the Program Counter and set the system runtime to a new region of code.<CON:0D>
+<CON:0D>
+Used together, these commands enabled "full access" to the system.  As mentioned earlier, CMDR-DOS and BASIC itself reserves some regions of memory for their own internal processing.  But in general, one can apply any "machine code blob" to any address region, and begin execution of that code.  And so if some new hardware became available that lacked a BASIC keyword to support (such as early modems and serial I/O devices), you could still access that feature by programming the supporting machine code yourself, use SYS to invoke that support, and a stack pointer was coordinated to return back to your main program.<CON:0D>
+<CON:0D>
+PEEK, POKE, SYS are also used to speed up performance.  BASIC works by using an interpreter to process the tokenized version of the program, and it does so each time a line of BASIC code is to be executed.  Direct machine code avoids this overhead, which at a time when systems were yet barely 1MHz, this made a significant impact on performance.  But there was a tradeoff: for the most part, BASIC was largely portable or extremely similar across systems (with some exceptions, such as the FORM keyword mentioned earlier on the IBM 5110 BASIC).  But the use of specific memory addresses quickly would make a program depend on a specific system.<CON:0D>
+<CON:0D>
+Still, combining BASIC and access to machine code made for a very versatile system to quickly prototype and experiment with ideas.  
+For example, one could add a temperature probe to GPIO lines that are tied to a specific address, while using an array in BASIC to store temperature results over time and output summary reports to a printer.  But it was also quickly realized one could by pass the BASIC INPUT keyword (which was "blocking" and required some user input to be provided) and use PEEK/POKE to make even more interactive software.  Specifically, that of making games.<CON:0D>
+<CON:0D>
+In the following example, "immediate mode" is used with PEEK to examine a small region of memory:<CON:0D>
+<CON:0D>
+<CON:FF>FOR I=0 TO 20:PRINT HEX$(PEEK($A000+I)):NEXT<CON:0D>
+<CON:0D>
+This displays the first 21 bytes in hexidecimal starting at address $A000.
+<CON:0D>
+This combination of BASIC and use of machine code allowed users to write programs far beyond what anyone had previously imagined that BASIC would be capable of.  Many creative BASIC programs were developed by people who otherwise had no formal computer training, since the syntax was easy to learn and inexpensive microprocessors booted right up to a "BASIC prompt" (making it easy to experiment).  There was quickly published many BASIC program books full of examples, and monthly magazine subscriptions also with pages full of BASIC examples.  Large portions of BASIC syntax were typically in common across systems, often just needing small adjustments across platforms.<CON:0D>
+<CON:0D>
+Tokenized BASIC<CON:0D>
+<CON:FE>
+Tokenization is when the "plain text" form of a BASIC keyword (such as "PRINT") is interpreted and then thereafter stored in memory in a shortend "token" representation (such as hex value $48; the exact value used varied across different implementation of BASIC).  Using the earlier example, the "FOR I = 0 TO 20" portion (which is 15 characters) might get tokenized down into five bytes: <<FOR>, <<variable I>, <<start 0>, <<stop 20>, <<increment 1>.  When listing the code later, parsing the tokens back into plain text, the displayed result might be presented as "FORI=0TO20" (as BASIC often doesn't need spaces between tokens).<CON:0D>
+<CON:0D>
+That is, once a line of code has been "tokenized" you may notice that when you LIST your program later, it no longer looks like what you had originally typed on the screen for that line of code.  This especially applies to extra whitespaces you may have used to try to align content of one line code to another line of code. Recall in the early days of computing, resources were extremely limited and every byte mattered, and so "tokenized" form of BASIC was both a memory reduction savings and performance improvement during runtime.  For example, the keyword of PRINT or RND might both be tokenized and stored into one single byte, rather than five ("PRINT") or three ("RND") bytes respectively.  The space savings also applies to when saving the program to tape or disk, which were also very limited resources.<CON:0D>
+<CON:0D>
+Many of the original mainframe implementations of BASIC had advanced features such as matrix operations, complex function (FN) definitions, an integrated form of function-key handlers, or increased number of dimensional arrays.  Many of these features were cut in the initial wave of microcomputer BASIC's.<CON:0D>
+<CON:0D>
+<TLINK:TOP,TOP> Back to top<CON:0D>
+<CON:0D>

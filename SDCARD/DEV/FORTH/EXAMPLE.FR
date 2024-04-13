@@ -1,0 +1,8 @@
+: no dup 0= if drop ." no more " else . then ;
+: s 1 = 0= if ." s" then ;
+: bob dup no ." bottle" s ."  of beer" ;
+: wall dup bob ."  on the wall" 0= if 33 emit then cr ;
+: t1d ." take one down, pass it around"  cr ;
+: verse dup wall dup bob cr t1d 1 - dup wall cr ;
+: sing 99 begin verse dup 0= until ;
+sing

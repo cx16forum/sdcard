@@ -1,0 +1,56 @@
+<XLINK:TOC.NFO,TOC> Back to Table of Contents<CON:0D>
+<CON:0D>
+<TLINK:PART2,HISTORY> Go to PART 2 (historical context)<CON:0D>
+<CON:0D>
+<CON:9E>PART 1<CON:05>: The X16 Project<CON:0D>
+-----------------------<CON:0D>
+<CON:0D>
+The Commander X16 project began around 2018, with an idea of making an updated "retro" desktop home computer system.  Updates such as built-in VGA support, more than 64K system RAM, built in SD card support, faster clock speed, while using modern available components and still feeling different than any other modern day Linux or PC system.  This idea was promoted by The 8-Bit Guy in his "Building my dream computer" video posted in February 2019.<CON:0D>
+<CON:0D>
+And then, the Pandemic of 2020 very suddenly disrupted many aspects of day-to-day life. Physical production of the system had to be put on hold.  But through emulators and virtual design, the volunteer development team pressed on.<CON:0D>
+<CON:0D>
+They had to deal with legal issues of incorporating aspects of original Commodore BASIC V2 and ROM software, make judgement calls on what hardware components would be sustainable as "supply chains" came back to normal, and do the technical work of enhancing the original Commodore core to make use of the new system capabilities.<CON:0D>
+<CON:0D>
+After years of designing and developing, the initial batch of Developer Board hardware was first sold on Thursday, June 22nd, 2023 at the texelec.com website.  About 30 boards were reserved for early contributors to the project (supported by a kick starter GoFundMe), while the remaining 70 boards were sold out within approximately three hours.<CON:0D>
+<CON:0D>
+Approximately 109 boards were made, including some early prototypes.  Some of the initial boards (and all of the VERA daughter boards) were made by Kevin and David's own soldering solution, but a majority of the boards were put together at Suntronic (an electronics manufacturing company near Dallas, Texas).  All of the boards were released with System ROM version R43.<CON:0D>
+<CON:0D>
+These "early adopters" were the first users, outside of 8-Bit Productions, to make use of the system and give direct feedback (mainly on the X16 Discord).  One feedback in particular was a request to complete support for the mouse wheel, since all the DevBoards were delivered with a PS/2 mouse that did include a mouse wheel.  Other request included a few BASIC keyword extensions (such as TILE).  Two other major feature additions at this time were XEDIT and BASLOAD, along with VERA FX enhancements that were demonstrated at VCF Midwest in Chicago on September 9th, 2023.  After the release of the DevBoards and R43, greater attention to maintaining "backwards compatibility" was given.  An excellent changelog detailing the progress on X16 ROM software is available on the X16 Community github.<CON:0D>
+<CON:0D>
+Between July and August of 2023, Lazer3D also shipped sales of their official X16 case from the UK. These orders were then closed August 10th, 2023, since it was known that the final boards would have an angled expansion slot that would require a minor update to the case design.  The updated Lazer3D cases are planned to be available in 2024.<CON:0D>
+<CON:0D>
+Some of the earliest X16 DevBoards did exhibit some technical issues as the production process was ironed out.  But after using the system for awhile, no major flaws in the hardware or System ROM were found.  The X16 system was ready!<CON:0D>
+<CON:0D>
+The decision was finally made to proceed with the X16 launch, with an announcement of accepting a pre-order of up to 1000 X16 boards going live on October 1st, 2023 at the texelec.com website.  Within a month, over 800 boards had been pre-ordered.  The official release date for deliveries of this second batch of pre-order DevBoards is set to February 29th, 2024, although early delivery of some orders may be possible.<CON:0D>
+<CON:0D>
+<CON:0D>
+<TAG:PART2>
+PART 2: Historical Context<CON:0D>
+--------------------------<CON:0D>
+<CON:0D>
+The Commander X16 is an 8-bit system based on the 65(C)02 microprocessor.  The original MOS 6502 microprocessor was developed in 1975 and was an instant game changer in enabling the first generation of affordable home computers.<CON:0D>
+<CON:0D>
+The 6502 was initially offered for $25 in 1975.  In comparison, the Intel 8080 chip was introduced at a cost of $360 (more than 10X the cost of the 6502!), a price that Motorola also matched with their 6800 chip.  Even the famous Zilog Z80 was initially offered for $60, still more than double the cost of the 6502.<CON:0D>
+<CON:0D>
+Ramping up production for Atari, Commodore, and Apple, MOS technology was able to reduce the 6502 cost to under $4 by 1977.  The 6502 represents a very historical moment in computing, where its designer Chuck Puddle changed the industry by showing how simple, affordable design can still provide a great amount of utility and value.  His business partner, Jack Tramiel (founder of Commodore), was looking to move beyond simple desktop calculators and recognized the potential that the 6502 CPU offered.  Computing up until then had been dominated by expensive IBM and HP mainframes, accessible only by expensive leases.  But in 1978, home users began developing useful software for these new microcomputer systems, and the "personal home computer" was born.<CON:0D>
+<CON:0D>
+In 1983, Arizona based WDC released an updated version of the 6502: the CMOS-based 65(C)02.  This version supports higher clock rates, runs at lower power, and offers a few additional instructions.  But it retains all the 6502 instructions and A, X, Y, SP, PC register arrangement.  These features and the continued availability of the 65(C)02, along with the overall MOS 6502 lineage, is why this CPU was chosen for the Commander X16.<CON:0D>
+<CON:0D>
+But a computer system is far more than its CPU.  Rather than a fully consolidated modern FPGA solution, the X16 intentionally uses the more classic discrete-component approach.  This makes the system easier to understand from a hardware component perspective: you can see the ROMs, you can see the RAM chips, and you can identify the various other supporting components.<CON:0D>
+<CON:0D>
+This makes the X16 more approachable for learning purposes, as well as "tinkering" with the system by having visibily accessible pins, while also appreciating the style of a very early time in digital computing history: CRTs, text-mode terminals, sprite graphics, and "chiptune" audio.  But the X16 makes a few compromises to make the experience more convenient, such as:<CON:0D>
+<CON:0D>
+- Use of easy to find PS/2 connectors<CON:0D>
+- Native VGA output (and Component and S-video)<CON:0D>
+- Built in SD-card file storage<CON:0D>
+- Mouse support!<CON:0D>
+- And various KERNAL ROM enhancements<CON:0D>
+<CON:0D>
+The era of "boots up to BASIC" systems, such as the Apple IIe, came to a close around 1993.  But if the early Commodore, Apple, and Tandy systems were given one more product cycle: the Commander X16 represents that "what if" dream of what that product may have looked like: a combination of the expansion features of the Apple ][, the enhanced video of the Color Computer 3 (GIME), and the audio-awesomeness of the Amiga.  In addition, the X16 system features banked-memory to give software access to far more than 64KB of RAM.<CON:0D>
+<CON:0D>
+The X16 offers the "best of everything" in the style of the late 1980s retro computing, while being available with modern reliable components.  All while remaining simple enough to understand the fundamenatals of both digital computer hardware and software principles that date back to the mid-1960s.<CON:0D>
+<CON:0D>
+When fully utilized, the VERA chip provides Sega Genesis quality experience.  This is an 8-bit system that rivals Sega's excellent 16-bit system, while the X16 can also be used as a fully functional programmable personal computer.<CON:0D>
+<CON:0D>
+Thank you for choosing to experience the Commander X16 system and we look forward to seeing what you develop!<CON:0D>
+<CON:0D>

@@ -1,0 +1,455 @@
+<XLINK:TOC.NFO,TOC> Back to Table of Contents<CON:05>
+<CON:0D>
+<CON:0D>
+A Special Thanks to Many X16 Contributors<CON:0D>
+<CON:0D><CON:9E>
+David Murray<CON:0D>
+Kevin Williams<CON:0D>
+Frank van den Hoef<CON:0D>
+Christian Simpson<CON:0D>
+Matt Heffernan<CON:0D>
+Barry Yost<CON:0D>
+Joe Burks<CON:0D>
+Stefan Jakobsson<CON:0D>
+Troy Ablan<CON:0D>
+Michael Steil<CON:0D>
+<CON:05><CON:0D>
+<CON:0D>
+Contributing Developer<CON:0D>
+(alphabetical)<CON:0D>
+----------------------<CON:0D>
+a9m                <CON:0D>
+Adiee5             <CON:0D>
+ahenry3068         <CON:0D>
+AndyMt             <CON:0D>
+badmai             <CON:0D>
+borgar             <CON:0D>
+CX16UserSteveC     <CON:0D>
+Dacobi             <CON:0D>
+desertfish         <CON:0D>
+DusanStrakl        <CON:0D>
+EyeballKid         <CON:0D>
+hechelion          <CON:0D>
+JeffreyH           <CON:0D>
+Jestin             <CON:0D>
+jimboo             <CON:0D>
+JimmyDansbo        <CON:0D>
+jnewman            <CON:0D>
+Johan KÜrlin       <CON:0D>
+Joshua Bair        <CON:0D>
+Justin Baldock     <CON:0D>
+Kelli217           <CON:0D>
+kliepatsch         <CON:0D>
+LRFLEW             <CON:0D>
+m00dawg            <CON:0D>
+Manannan           <CON:0D>
+MarkTheStrange     <CON:0D>
+MarkWiedmann       <CON:0D>
+Martin Schmalenbach<CON:0D>
+Matherian          <CON:0D>
+Michael Parson     <CON:0D>
+MooingLemur        <CON:0D>
+Otto               <CON:0D>
+pastblast          <CON:0D>
+paulscottrobson    <CON:0D>
+randomcardboardbox <CON:0D>
+RebeccaRGB         <CON:0D>
+rje                <CON:0D>
+robrose            <CON:0D>
+ShawnL624          <CON:0D>
+SlithyMatt         <CON:0D>
+Snickers11001001   <CON:0D>
+<CON:FF>svenvandevelde/FlightControl<CON:0D>
+TediusTimmy        <CON:0D>
+Toboter            <CON:0D>
+totodilespy        <CON:0D>
+VeryImpatientGamer <CON:0D>
+voidstar           <CON:0D>
+Yazwho             <CON:0D>
+yock1960           <CON:0D>
+ZeroByte           <CON:0D>
+<CON:0D>
+Media Relations<CON:0D>
+---------------<CON:0D>
+Minori<CON:0D>
+Yuki<CON:0D>
+TomXP411<CON:0D>
+<CON:0D>
+<CON:0D>
+Thanks to many GoFundMe contributors that helped to make the hardware launch of the X16 possible!<CON:0D>
+<CON:0D>
+Commander X16 Project<CON:0D>
+(October 20th, 2022)<CON:0D>
+---------------------<CON:0D>
+Peter Membrey	<CON:0D>
+Jonathan Christman	<CON:0D>
+Ken Robertson	<CON:0D>
+Neil Evans	<CON:0D>
+Ken Jordan	<CON:0D>
+Stephen Horn	<CON:0D>
+Dustin Campbell	<CON:0D>
+Jeffrey Hullekes	<CON:0D>
+Tim Buchalka	<CON:0D>
+Jason Hodge	<CON:0D>
+Patrick Ashmore	<CON:0D>
+Dusan Strakl	<CON:0D>
+Jonathan Christman	<CON:0D>
+Joseph Jancuk	<CON:0D>
+Sven VandeVelde	<CON:0D>
+Todd Vernon	<CON:0D>
+fank Fenti	<CON:0D>
+Jason Thorpe	<CON:0D>
+Erik Schutte	<CON:0D>
+Kendall Cobb	<CON:0D>
+Ellery Bann	<CON:0D>
+Jeffery Yeary	<CON:0D>
+David Freels	<CON:0D>
+Steve Lewis	<CON:0D>
+William Leue	<CON:0D>
+Anthony Colquhoun	<CON:0D>
+Derek Nylen	<CON:0D>
+John Mudge	<CON:0D>
+Tim Soderstrom	<CON:0D>
+Tom Seago	<CON:0D>
+Taijan Dean	<CON:0D>
+Andreas Baumann	<CON:0D>
+Burebista Decebal	<CON:0D>
+Chase Scott	<CON:0D>
+Christophe JANOT	<CON:0D>
+Christopher Fowler	<CON:0D>
+Craig Paluszcyk	<CON:0D>
+Daniel Stephens	<CON:0D>
+David Carroll	<CON:0D>
+David Kramer	<CON:0D>
+David Romig	<CON:0D>
+Dennis Lindqvist	<CON:0D>
+Devin McGraw	<CON:0D>
+Douglas Johnson	<CON:0D>
+Douglas Seifert	<CON:0D>
+Eric Wahle	<CON:0D>
+Felix Winkelnkemper	<CON:0D>
+Hiroshi OGINO	<CON:0D>
+Irmende Jong	<CON:0D>
+Jestin Stoffel	<CON:0D>
+Joseph Dewey	<CON:0D>
+kelly ethridge	<CON:0D>
+Kevin Butler	<CON:0D>
+Klaus Loeffelmann	<CON:0D>
+Korey Cryderman	<CON:0D>
+LeeNovak	<CON:0D>
+Marcus Linkert	<CON:0D>
+Mr.Nicholas J. Firth<CON:0D>
+NicholasG	<CON:0D>
+nickeschmeijer	<CON:0D>
+Salih Albayrak	<CON:0D>
+ScottOrr	<CON:0D>
+Stefan Jakobsson	<CON:0D>
+Stefan Pieper	<CON:0D>
+Trevor Berninger	<CON:0D>
+Violin Iliev	<CON:0D>
+Michael Best	<CON:0D>
+Blair Heinzlmeir	<CON:0D>
+Richard Mellor	<CON:0D>
+Daniel Mecklenburg	<CON:0D>
+Daniel Goodberry	<CON:0D>
+DanielJ Checovetes	<CON:0D>
+Jonathan Leckie	<CON:0D>
+Kevin Horn	<CON:0D>
+LutzMarkus Willek	<CON:0D>
+Patrick Fleming	<CON:0D>
+<CON:FF>Ricardo Balbachevsky Setti	<CON:0D>
+Richard Christy	<CON:0D>
+Ronald J Wedel	<CON:0D>
+William Jhun	<CON:0D>
+Adam Hemphill	<CON:0D>
+Alain MÇnard	<CON:0D>
+Alex Cash	<CON:0D>
+Anna Monetza	<CON:0D>
+Benjamin Stauffer	<CON:0D>
+Bradley Smith	<CON:0D>
+Brent Galloway	<CON:0D>
+Bryan Blevins	<CON:0D>
+Bryan James	<CON:0D>
+Charlie Nolan	<CON:0D>
+Chris Allegretta	<CON:0D>
+Christian Scholz	<CON:0D>
+Christoph Heer	<CON:0D>
+Craig Beare	<CON:0D>
+Damen Hannah	<CON:0D>
+Dave McKay	<CON:0D>
+Dennis Gustafsson	<CON:0D>
+Donato Sinicco	<CON:0D>
+Euro Micelli	<CON:0D>
+Glenn MMusano	<CON:0D>
+Isabel laUrschel	<CON:0D>
+Jack Andersen	<CON:0D>
+James Elphick	<CON:0D>
+Jens Aage Arendt	<CON:0D>
+Jesper Klingvall	<CON:0D>
+Joachim Roxlau	<CON:0D>
+Johan KÜrlin	<CON:0D>
+John Deane	<CON:0D>
+Joseph Vrba	<CON:0D>
+Josh Simpson	<CON:0D>
+Justin Schwartzbauer	<CON:0D>
+Lauren Harper	<CON:0D>
+Lorin Millsap	<CON:0D>
+Lucas Fowler	<CON:0D>
+Markus Pooch	<CON:0D>
+Michael Cook	<CON:0D>
+Mike Yocum	<CON:0D>
+nicolas duncan	<CON:0D>
+Panu Korpela	<CON:0D>
+Patrick Bentley	<CON:0D>
+Patrick Fink	<CON:0D>
+Paul Eccles	<CON:0D>
+Petr Mazanec	<CON:0D>
+Robert BPorterJr	<CON:0D>
+robert malar	<CON:0D>
+Ryan Allard	<CON:0D>
+Stephen Horne	<CON:0D>
+Timothy Karagias	<CON:0D>
+Troy Ablan	<CON:0D>
+Tyler Compton	<CON:0D>
+Daniel Renfroe	<CON:0D>
+Douglas Gough	<CON:0D>
+Mark Burring	<CON:0D>
+michael harker	<CON:0D>
+<CON:FF>Ra£l Morales Hidalgo	<CON:0D>
+Matthew SHeffernan	<CON:0D>
+Adrian Schneider	<CON:0D>
+DStroma	<CON:0D>
+Kevin Heinen	<CON:0D>
+Cameron Nelson	<CON:0D>
+<CON:FF>Fabian Tim Weidenbach	<CON:0D>
+Marcus Jota	<CON:0D>
+Matthew Palmer	<CON:0D>
+Org@nic ColdFMARQUES	<CON:0D>
+Paul Burdick	<CON:0D>
+PaulCa vanagh	<CON:0D>
+Pierre Gagnon	<CON:0D>
+Renevan Belzen	<CON:0D>
+Ryan Teribery	<CON:0D>
+Tim Mathis	<CON:0D>
+<CON:FF>Wojciech Wisniewski	<CON:0D>
+Adam Smith	<CON:0D>
+Benjamin Reindl	<CON:0D>
+Brian Kelly	<CON:0D>
+Christopher Purdy	<CON:0D>
+Damiân Kes	<CON:0D>
+Daniel Kelley	<CON:0D>
+Darren Yesmaniski	<CON:0D>
+David Costelloe	<CON:0D>
+David Langston	<CON:0D>
+Dirk Blom	<CON:0D>
+Eric Silberstein	<CON:0D>
+Franklin Sabelhaus	<CON:0D>
+Glendon Humphrey	<CON:0D>
+Greg Hiebert	<CON:0D>
+Heath Gallimore	<CON:0D>
+James McAfee	<CON:0D>
+Jason DeStefano	<CON:0D>
+Jason Francis	<CON:0D>
+Jason Redmond	<CON:0D>
+Jeff Rizzo	<CON:0D>
+Jeffrey Shea	<CON:0D>
+John Gillooly	<CON:0D>
+Jonathan Pullen	<CON:0D>
+Kevin Mossey	<CON:0D>
+Lari Kovanen	<CON:0D>
+Mark Donnelly	<CON:0D>
+Mark Shaw	<CON:0D>
+Matt Schroeder	<CON:0D>
+matthew hansen	<CON:0D>
+Michael Blackwood	<CON:0D>
+Paul Kuhnast	<CON:0D>
+Pedro Pena	<CON:0D>
+Peter Martin	<CON:0D>
+Richard Taylor	<CON:0D>
+Robert Baker	<CON:0D>
+Ryan Shoemaker	<CON:0D>
+Stephane Nadeau	<CON:0D>
+Steve Wilson	<CON:0D>
+Steven Iltis	<CON:0D>
+Steven Kahn	<CON:0D>
+Thomas Hilbert	<CON:0D>
+Thomas Pietsch	<CON:0D>
+Tim Stahl	<CON:0D>
+Timothy Psensky	<CON:0D>
+Tyler Royer	<CON:0D>
+Roland McIntosh	<CON:0D>
+AP	<CON:0D>
+Adam Butt	<CON:0D>
+Adam Leyshon	<CON:0D>
+Alp Burak Beder	<CON:0D>
+<CON:FF>Andreas Schmidbauer	<CON:0D>
+Andrew Bussman	<CON:0D>
+Andrew Wilson	<CON:0D>
+Ben Darling	<CON:0D>
+Billy-pp Baker	<CON:0D>
+Bradley SStach	<CON:0D>
+Chris Abbott	<CON:0D>
+Chris Kmiec	<CON:0D>
+<CON:FF>Christian Laulies	<CON:0D>
+Cody Crockett	<CON:0D>
+Colin Hosking	<CON:0D>
+Dakota Shaeffer	<CON:0D>
+DaphnÇe Lavoie	<CON:0D>
+David Blaisdell	<CON:0D>
+David Hassler	<CON:0D>
+David Thomson	<CON:0D>
+Don Nolder	<CON:0D>
+Duilio Gamba	<CON:0D>
+<CON:FF>Dustin Christopherson	<CON:0D>
+Dustin McEwen	<CON:0D>
+Evin Dunn	<CON:0D>
+Florian Bonnefoy	<CON:0D>
+Frederikde Raad	<CON:0D>
+Gale Rysoro	<CON:0D>
+Glen Dady	<CON:0D>
+Graham Foral	<CON:0D>
+<CON:FF>Isaac Trimble-Pederson	<CON:0D>
+Jacob Gress	<CON:0D>
+James Weeks	<CON:0D>
+Jan Bersheim	<CON:0D>
+Jason Lloyd	<CON:0D>
+Jay Crutti	<CON:0D>
+Jim Pyle	<CON:0D>
+John Hoffer	<CON:0D>
+Joseph Marques	<CON:0D>
+Juan Vargas	<CON:0D>
+Kevin Shaffer	<CON:0D>
+Khanh Duong	<CON:0D>
+Leif Engman	<CON:0D>
+Logan Russell	<CON:0D>
+Marc Galbraith	<CON:0D>
+Mark Edinburgh	<CON:0D>
+Mark Lam	<CON:0D>
+Mark Miller	<CON:0D>
+Mark Redden	<CON:0D>
+Martin Miedema	<CON:0D>
+Merlin Shaw	<CON:0D>
+Michael Neukam	<CON:0D>
+Michael Peterson	<CON:0D>
+Michiel Beijen	<CON:0D>
+Nicholas Murray	<CON:0D>
+Paul Davis	<CON:0D>
+Paul Ranzau	<CON:0D>
+Ryan Illman	<CON:0D>
+Sebastian BrÅckner	<CON:0D>
+Steven Rose	<CON:0D>
+Tomasz Mysliwiec	<CON:0D>
+Tomi Kause	<CON:0D>
+Ulf Caspers	<CON:0D>
+Ursula Fîrstle	<CON:0D>
+Vebjorn NergÜrd	<CON:0D>
+Martin Gillmaier	<CON:0D>
+Paulvander Laak	<CON:0D>
+DSilbergleith Cunniff	<CON:0D>
+Mike Bison	<CON:0D>
+Shelton Rose	<CON:0D>
+Christiaan Turksema	<CON:0D>
+Christian Penno	<CON:0D>
+Cristobal Ocampo	<CON:0D>
+Daniel Marshall	<CON:0D>
+Grant Johnson	<CON:0D>
+Hunter Wilcox	<CON:0D>
+John Rambo	<CON:0D>
+Kevin Leah	<CON:0D>
+Michael Freeman	<CON:0D>
+Pascal Lavoie	<CON:0D>
+Roy Bland	<CON:0D>
+Sebastian Lipp	<CON:0D>
+Steven Landman	<CON:0D>
+Joel Thieffry	<CON:0D>
+Alex Thompson	<CON:0D>
+Andres Reichardt	<CON:0D>
+Anton°n Steskal	<CON:0D>
+Arpad Farsang	<CON:0D>
+Brandon Walker	<CON:0D>
+CErrington	<CON:0D>
+Clemens Schotte	<CON:0D>
+Cori Skagen	<CON:0D>
+David Ogden	<CON:0D>
+Doug Calvert	<CON:0D>
+Douglas Frantz	<CON:0D>
+Dustin Taub	<CON:0D>
+Erich Whitney	<CON:0D>
+Folko HÅlsebusch	<CON:0D>
+Gabriel DubÇ-Forgues	<CON:0D>
+Gaetan Thiffault	<CON:0D>
+Graden Hardy	<CON:0D>
+Jacob Sanders	<CON:0D>
+Jeremiah Blum	<CON:0D>
+Jody Herperger	<CON:0D>
+Jonathan Lindgren	<CON:0D>
+JOSE GUZMAN	<CON:0D>
+Joshua DOls	<CON:0D>
+<CON:FF>Juan Pablo Martinez Mahecha	<CON:0D>
+Justin O'Conner	<CON:0D>
+Keith Shirley	<CON:0D>
+Kevin Herring	<CON:0D>
+Kevin Zepp	<CON:0D>
+Kristian Berlin	<CON:0D>
+Lee Oades	<CON:0D>
+Marcello Bachechi	<CON:0D>
+Mark Lechtermann	<CON:0D>
+Martin Longbottom	<CON:0D>
+Mathew Wu	<CON:0D>
+Maximilian Wlasak	<CON:0D>
+Michael Faison	<CON:0D>
+Michael Manley	<CON:0D>
+Michael Pantig	<CON:0D>
+Michael Stanley	<CON:0D>
+Nevin Godfrey	<CON:0D>
+Oliver Persike	<CON:0D>
+Paul Bouche	<CON:0D>
+Paul Hibbitts	<CON:0D>
+Peter Arevad	<CON:0D>
+Rene Staghoj Nielsen	<CON:0D>
+roman manders	<CON:0D>
+Russell Sommer	<CON:0D>
+ryan rafferty	<CON:0D>
+Sebastian Krîsinger	<CON:0D>
+Shaun Hayward	<CON:0D>
+Stefan Agartsson	<CON:0D>
+Stefano Gigante	<CON:0D>
+Thomas Goff	<CON:0D>
+TomasRosales Revello	<CON:0D>
+Wojciech Siudzinski	<CON:0D>
+Joseph Collins	<CON:0D>
+Lyubomir Tachev	<CON:0D>
+Brandon Sheaffer	<CON:0D>
+Logan Eaton	<CON:0D>
+Vojtech Salajka	<CON:0D>
+Marcell PÅnkîsd	<CON:0D>
+Alexandre CìtÇ	<CON:0D>
+Austin Ware	<CON:0D>
+Bas Hendriks	<CON:0D>
+Benjamin Clayton	<CON:0D>
+bradbyrd	<CON:0D>
+Cadell Logan	<CON:0D>
+Doug Damon	<CON:0D>
+Douglas Quincy Rohal	<CON:0D>
+IanDay	<CON:0D>
+JamieBadillo	<CON:0D>
+<CON:FF>Javier Andres Mena Zapata	<CON:0D>
+<CON:FF>Jose Victor Ramos Sanchez	<CON:0D>
+<CON:FF>Konrad Chmielecki	<CON:0D>
+<CON:FF>Lakota LeCaine-French	<CON:0D>
+<CON:FF>Leonardo L Calagday	<CON:0D>
+LoganEaton	<CON:0D>
+<CON:FF>Luiz Claudio Eudes Corràa	<CON:0D>
+Marvin S. Chomer	<CON:0D>
+Nils Kopal	<CON:0D>
+<CON:FF>Rafael Uribarri G¢mez-Mor†n	<CON:0D>
+Sami Kemppainen	<CON:0D>
+Stefan Szomraky	<CON:0D>
+Teemu Lepistî	<CON:0D>
+Tim Ceddia	<CON:0D>
+Tyler Bramble	<CON:0D>
+Waylon Martin	<CON:0D>
+<CON:0D>
+(and dozens of Anonymous contributors)	<CON:0D>
+<CON:0D>
+<CON:0D>

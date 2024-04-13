@@ -1,0 +1,9 @@
+{
+    "manifest_version": "1.0.0",
+    "name": "A Christmas Card",
+    "author": "Anthony W. Henry",
+    "app_version": "1.0.0",
+    "license": "Unrestricted",
+    "start_prg": "XMASCARD.PRG"
+}
+

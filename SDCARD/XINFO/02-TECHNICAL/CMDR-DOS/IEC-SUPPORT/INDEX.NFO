@@ -1,0 +1,16 @@
+<XLI:CMDR-DOS/INDEX.NFO,CMDR-DOS> X16 DOS Guide<CON:0D>
+<CON:0D>
+IEC (IEEE-488 bus) or "CBM bus" is a serial data interface that is the round 6-pin connector located at the rear ports area of the X16.<CON:0D>
+<CON:0D>
+This port can be used to connect a Commodore printer, disk drive, or IEC compliant serial devices.  This IEC port is not the same as a RS-232 serial port.<CON:0D>
+<CON:0D>
+If an IEC device is already configured as Device #8, it may conflict with the existing SD card.  You can try remove the SD-card, then powering up the system temporarily to re-configured the connected IEC device to change it to a different Device number.<CON:0D>
+<CON:0D>
+The commands for doing so may vary across IEC devices.  For the typical SD2IEC from TFW8b.com, the command should be:<CON:0D>
+<CON:0D>
+<CON:FF>OPEN1,<<current address>,15,"U0>"+CHR$(<<new_address>):CLOSE1<CON:0D>
+<CON:FF>OPEN1,<<new_address>,15,"XW":CLOSE1<CON:0D>
+<CON:0D>
+Where <<current_address> is 8 and <<new_address> is 9.
+<CON:0D>
+<CON:0D>

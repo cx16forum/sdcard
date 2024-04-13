@@ -1,0 +1,15 @@
+<TAG:TOP>
+<XLI:BASIC/INDEX.NFO,BACK> BASIC Guide<CON:0D>
+<CON:0D>
+<CON:9E>COLOR<CON:05>: Set the Background and Foreground Colors<CON:0D>
+<CON:0D>
+<CON:9A>DESCRIPTION<CON:05><CON:0D>
+<CON:0D>
+The COLOR statement sets the text mode foreground color, and optionally the background color.  It takes either one or two arguments, both are integers from 0 through 15.  The first argument sets the color of the text, and the optional second argument sets the background color.  The numbers given correspond to the first 16 colors of the VERA's palette.
+<CON:0D>
+<CON:0D>
+The COLOR statement only effects areas of the screen where new text is placed, and will not change existing characters.  This makes it convenient to use in programs for drawing diagrams and images with PETSCII characters, since you can change both foreground and background colors for each individual charater.
+<CON:0D>
+<CON:0D>
+<TLI:TOP,TOP> Back to Top
+<CON:0D>

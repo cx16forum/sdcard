@@ -1,0 +1,28 @@
+<TAG:TOP>
+<XLI:BASIC/INDEX.NFO,BACK> BASIC Guide<CON:0D>
+<CON:0D>
+<CON:9E>DATA<CON:05>: Define Program Data<CON:0D>
+<CON:0D>
+<TLI:EXAMPLE,EXAMPLE><CON:0D>
+<CON:0D>
+<CON:9A>DESCRIPTION<CON:05><CON:0D>
+<CON:0D>
+The DATA statement creates a data section of a BASIC program from which the READ statement will read from.  The DATA statement is followed by a comma-separated list of values.  These values can be integers, floating point numbers, or strings.  It is important to use the correct variable type when READing these values, otherwise a TYPE MISMATCH error can occur.  If two commas have nothing between them, the value will be interpreted as a 0 for a number or an empty string.
+<CON:0D>
+<CON:0D>
+Multiple DATA statements can be used in a program, and when one has been completely read by enough READ statements, the next READ statement will read from the next DATA statement.  All READ statements in a program can be thought of as a single contiguous block of data, even if the statements are not grouped together in the program.
+<CON:0D>
+<CON:0D>
+<TAG:EXAMPLE>Example usage of [DATA]:<CON:0D>
+<CON:0D>
+<CON:FF>10 READ A<CON:0D>
+<CON:FF>20 READ B%<CON:0D>
+<CON:FF>30 READ C$<CON:0D>
+<CON:FF>40 PRINT A, B%,C$<CON:0D>
+<CON:FF>50 DATA 34.2,42<CON:0D>
+<CON:FF>60 DATA "COMMANDER X16"<CON:0D>
+<CON:0D>
+DATA statements do not need to be executed, so they can slow down a program if placed before code does need to execute.  Because of this, it is best to place all DATA statements at the end of program.
+<CON:0D>
+<TLI:TOP,TOP> Back to Top
+<CON:0D>

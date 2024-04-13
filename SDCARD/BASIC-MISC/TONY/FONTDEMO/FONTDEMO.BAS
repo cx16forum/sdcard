@@ -1,0 +1,67 @@
+    COLOR 1,0
+    SCREEN 1
+    PRINT CHR$(15)
+    CLS
+
+    OPEN 5,8,5,"FONT.LST,S,R"
+    CT=1
+MAINLOOP:
+    LINPUT#5, F$
+    CK=ST
+    GOSUB FILEEXISTS
+    IF NOT FE% THEN SKIPNEXT
+    IF CT=1 THEN CLS
+    COLOR 1,6
+    LOCATE 1,1:PRINT RPT$(32,60);:LOCATE 1,1
+    PRINT "  FONT FILE: ";F$,,"NUMBER ";CT
+    COLOR 1,0
+    BVLOAD F$,8,1,$F000
+    GOSUB FIXCURSOR
+    IF CT> 1 THEN SKIP
+    PRINT
+    COLOR 1,6
+    PRINT "ASCII 32 to 128"
+    PRINT "---------------"
+    COLOR 1,0
+    FOR I = 32 TO 128
+        PRINT CHR$(I);"   ";
+    NEXT I
+    PRINT:PRINT
+    COLOR 1,6
+    PRINT "ASCII 160 TO 255"
+    PRINT "----------------"
+    COLOR 1,0
+    FOR I = 160 TO 255
+       PRINT CHR$(I);"   ";
+    NEXT I
+    PRINT:PRINT
+    PRINT "PRESS ANY KEY TO CONTINUE";
+SKIP:
+    GOSUB WAITFORKEY
+SKIPNEXT:
+    IF CK=0 THEN CT=CT+1:GOTO MAINLOOP
+    CLOSE 5
+    PRINT CHR$(14):CLS
+    END
+
+WAITFORKEY:
+    GET X$:IF X$<>"" THEN WAITFORKEY
+GETIT:
+    GET X$:IF X$="" THEN GETIT
+    IF X$=CHR$(27) THEN END
+    RETURN
+
+FIXCURSOR:
+     AA=$9F*8
+     FOR X = 0 TO 5
+         VPOKE 1,$F000+AA+X,0
+     NEXT X
+     VPOKE 1,$F000+AA+6,$FF
+     VPOKE 1,$F000+AA+7,$FF
+     RETURN
+
+FILEEXISTS:
+      X$=F$:FE%=0:X$=X$+",S,R"
+      OPEN 2,8,2,X$:CLOSE 2
+      OPEN 15,8,15:INPUT#15,X,X$
+      CLOSE 15:FE%=(X<=20):RETURN

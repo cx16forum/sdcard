@@ -1,0 +1,18 @@
+CONST CR=13; LF=10;
+VAR A,B,C,D:INTEGER;
+FUNC MAX4(X1,X2,X3,X4);
+   FUNC MAX2(X1,X2);
+      BEGIN
+         IF X1>X2 THEN MAX2:=X1
+         ELSE MAX2:=X2
+         END;
+   BEGIN
+      MAX4:=MAX2(MAX2(X1,X2),MAX2(X3,X4))
+      END;
+
+BEGIN
+   REPEAT
+      READ(A#,B#,C#,D#);
+      WRITE('THE LARGEST IS ',MAX4(A,B,C,D)#,CR,LF)
+      UNTIL A<0
+   END.

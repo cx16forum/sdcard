@@ -1,0 +1,38 @@
+<XLINK:TOC.NFO,TOC> Back to Table of Contents<CON:0D>
+<CON:0D>
+The Commander X16 is a "boots to BASIC" system, which was common during the first decade of most microcomputers starting in 1975.  While BASIC is associated with the interpreted programming language that originated in 1964, one of the main aspects that made BASIC popular was the "editor operating system" that made using BASIC very practical on the early microprocessor systems.   This editor could be implemented on systems with as little as 4KB of RAM and that had no disk drive or file system.<CON:0D>
+<CON:0D>
+BASIC for microcomputers was initially loaded via "punched tape" or (later) cassette tape, but eventually both BASIC and the corresponding "on screen editing environment" were combined into a System ROM.  That is, you could power on the system, and begin using BASIC immediately.  This is the flashing cursor prompt that you see when powering up the X16: it is an "interactive editor" frontend that is coupled with the BASIC interpreter.<CON:0D>
+<CON:0D>
+One of the core aspects of BASIC is the use of "symbolic instruction" keywords (like CLS or PRINT).  These keywords are typically used to invoke special hardware unique to the host system.  By 1980, most "boots to BASIC" systems started adding commands to support disk drive access, enable video graphics modes, change colors, or play audio -- all features that were unthought of in the line-printer era of computing back when BASIC was first developed.  This is why the X16 startup prompt is most often called "CMDR-DOS" since many DOS (disk operating system) commands were added to the core BASIC (for loading files, changing directories, etc.).<CON:0D>
+<CON:0D>
+The startup operating environment is very much like a operating system, and one can think of the "application" of blinking the cursor as the first "background task" (as it is driven by use of an interrupt).  "CMDR-DOS" manages the cursor position, screen resolutions, system clock, and the "screen editor" can be used to invoke commands.  Whether entering system commands (like MENU, BANNER, HELP), DOS commands (like DOS"$ or @CD:), or BASIC programs, the same "editor operating system" is being used.<CON:0D>
+<CON:0D>
+So it is important to understand that "boots to BASIC" is a bit of a misnomer.  Rather, the system boots into an interactive environment that facilitates immediate use of BASIC, while also managing the overall operating state of the system.  For all the faults and limitations of BASIC, it ended up being the most practical solution towards a programmable system that could operate with very limited resources.<CON:0D>
+<CON:0D>
+USE OF CMDR-DOS<CON:0D>
+---------------<CON:0D>
+Each row on the CMDR-DOS screen can be thought of as its own separate command input.  At the moment you press <CON:9A>RETURN<CON:05> on a row, the entire content of that line is processed as a command by the "editor operating system."  This includes content both <CON:9A>before and after<CON:05> the current blinking-cursor position.   Keep in mind if you use the arrow keys to move around on the screen, and modify BASIC code on a line, the system is not aware of the changes until you press <CON:9A>RETURN<CON:05> on that line.<CON:0D>
+<CON:0D>
+Another way to think of this is that the text screen you see is like a "visible" region of memory.  You can use the cursor keys to navigate the cursor and interact with what you see on the screen.  But what you see on the screen is not "committed" until you press <CON:9A>RETURN<CON:05> on that row of the screen.<CON:0D>
+<CON:0D>
+AUTOBOOT.X16<CON:0D>
+------------<CON:0D>
+A special feature of the CMDR-DOS environment is that on startup, it will look for a file called <CON:9E>AUTOBOOT.X16<CON:05> in the root folder of the startup media (SD card).  If found, then the system will invoke the <CON:9E>BOOT<CON:05> command.  This command will LOAD and RUN the <CON:9E>AUTOBOOT.X16<CON:05> file found in the "current working directory."<CON:0D>
+<CON:0D>
+The ROM BASIC is used to perform the LOAD and RUN functions, which means the AUTOBOOT.X16 can contain any valid BASIC commands, or it can be a machine language program that has a BASIC SYS loader.<CON:0D>
+<CON:0D>
+This is useful so that from any folder, you can define its own AUTOBOOT.X16 to configure and run a program to your preferences.  A typical example is as follows:<CON:0D>
+<CON:0D>
+<CON:FF>10 SCREEN 3       :REM ENABLE SOME PREFERRED TEXT SCREEN MODE<CON:0D>
+<CON:FF>20 COLOR 1,0      :REM CHANGE FOREGROUND/BACKGROUND COLOR<CON:0D>
+<CON:FF>30 CLS            :REM CLEAR SCREEN SO BACKGROUND COLOR TAKES EFFECT ENTIRELY<CON:0D>
+<CON:FF>40 PRINT CHR$($8F):REM ENABLE PETSCII MODE (OR DISABLE ISO MODE)<CON:0D>
+<CON:FF>50 MOUSE 1        :REM TURN ON MOUSE CURSOR (SOME PROGRAMS DO NOT DO THIS AUTOMATICALLY)<CON:0D>
+<CON:FF>60 LOAD "MYSHELL.PRG":REM LOAD SOME FAVORITE PROGRAM LOCATED IN THIS FOLDER<CON:0D>
+<CON:FF>REM NOTE THAT "RUN" IS NOT NECESSARY HERE<CON:0D>
+<CON:0D>
+Be aware that you can not use EDIT to create a plain-text (ASCII) version of AUTOBOOT.X16.  Since the AUTOBOOT.X16 file is processed by BASIC, it must be in the tokenized BASIC format.  So to write an AUTOBOOT.X16 you would type the BASIC program, then do the following command:<CON:0D>
+<CON:FF><CON:9A>SAVE"@:AUTOBOOT.X16"<CON:05><CON:0D>
+This forces an overwrite to save the current BASIC program as the content of your AUTOBOOT.X16 file.<CON:0D>
+<CON:0D>

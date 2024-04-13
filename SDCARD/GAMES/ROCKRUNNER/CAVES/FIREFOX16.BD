@@ -1,0 +1,534 @@
+; Converted using Tim Stridmann's X2BDCFF converter.
+; Last modified: 28 June 2006
+
+[BDCFF]
+[game]
+Name=FireFox 16
+Author=FireFox
+Date=12.11.1999
+WWW=http://www.firefox.ch
+Charset=Original
+Fontset=Original
+Levels=1
+Caves=16
+
+[cave]
+Name=Cave 1. Blood4
+CaveDelay=8
+CaveTime=150
+DiamondsRequired=40
+DiamondValue=3 5
+Colors=Red Black LightRed Red Yellow
+
+[map]
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+W..r....r.r...wdw.d.W.r.r.r.dr..r..ww..W
+W........w..d....d.WFWw....w.......rrw.W
+Wwrw..rr.X.rd..w.r.rW...r.r..r.r.d.r..wW
+Ww...r..WFW.d...r..dwr.wr.r...rrr..w..rW
+Ww.....r.W...w...r.w..rrW.....d...r.r.wW
+W.wd...w..drr.rrwr.r..rWFWr...wd.rwW.r.W
+Wr..w.............r.r...Wd..r..ww.WFWr.W
+W.........d.....r..wWr.....r.....d.W...W
+W......r....w..rrrwWFWr.r....r...rw.r..W
+W..d...W..r.rwr.r...Wr....rd.d.........W
+Ww...wWFW.........r....w.r..d....rr....W
+W.dr.r.Wr...w.....w...W..w...r.r..w....W
+W.r.......rr.dw......WFWr..r.d.W.r.....W
+Ww....dw.d..r.w.rr...wWrrd.P..WFWw.r...W
+Ww..wd..rr.rw..wr.r..r.d.....d.Ww.rwd.wW
+Ww...rw.d...ww..rr..rw...r...r.d..d..r.W
+W.d....r.w.....W.r..r......W.....wr....W
+W.rrrr.....wr.WFW....r..w.WFWrrr.rw.r..W
+W..dd.r.r...rw.W.....r...d.W.rww.w.....W
+W....rw.dddr.r..rrw.......w.....rr..w..W
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+[/map]
+[/cave]
+
+[cave]
+Name=Cave 2. Complexe
+CaveDelay=8
+CaveTime=100
+DiamondsRequired=50
+DiamondValue=5 10
+MagicWallTime=1
+Colors=Brown Black Green Red Purple
+
+[map]
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+W c c c c c c c c c c c c c c c c c c cW
+W                                      W
+W                                      W
+W                  rr                  W
+W                  WW                  W
+W          rP    r WW r     r          W
+W        wwM     WXWWWW     Mww        W
+W     wwww.w       WW       w.wwww     W
+W  wwww....w       WW       wr...wwww  W
+Wwwwr..r.r.w                w....r..wwwW
+W..r......rw                w....r..r..W
+W.r........w                w..r....r..W
+W...r......w                w..r.......W
+W.rr......rw                w....r.....W
+W..r...r.r.w                w.....r..r.W
+W.r.....rrrw                w.r.......rW
+W...r......wwwwwwwwwwwwwwwwww....r.....W
+W...r..r.rr......r........r.......rr...W
+Wrr.r......r.r....r..r....r...r........W
+Wr.rr....rr..r............r..........rrW
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+[/map]
+[/cave]
+
+[cave]
+Name=Cave 3. Queen
+CaveDelay=8
+CaveTime=140
+DiamondsRequired=99
+DiamondValue=0 20
+SlimePermeability=1.000
+MagicWallTime=120
+Colors=Brown Black Purple Blue Green
+
+[map]
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+X r r   r   r   r   r   r   r   r      W
+W   .   .   .   .   .   .   .   .      W
+W M                                  s W
+W M                                  s W
+W M Wc  W   W   Wc  Wc  Wc  W   Wc   s W
+W M     c    c               c       s W
+W M                                  s W
+W M                                  s W
+W M                                 qs W
+WqM Wc  W   Wc  W   Wc  W   Wc  W    s W
+W M     c        c       c      c    s W
+W M                                  s W
+W M                           P      s W
+W M                                  s W
+W M                                  s W
+W M W   Wc  W   Wc  W   Wc  W   Wc   s W
+W M  c      c        c       c       s W
+W M                                  s W
+W M                                  s W
+W                                      W
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+[/map]
+[/cave]
+
+[cave]
+Name=Cave 4. Pyramid2
+CaveDelay=8
+CaveTime=130
+DiamondsRequired=20
+DiamondValue=10 20
+SlimePermeability=0.250
+Colors=Brown Black Yellow Orange Red
+
+[map]
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+WrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrW
+WrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrW
+WrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrW
+WssssssssssssssssssssssssssssssssssssssW
+W                                      W
+WW                 q    q        q    WW
+Wd     q    q   q             q    q  dW
+WW                   q                WW
+Wd  q                                 dW
+WW        q     s    s    q    q      WW
+Wd    q        s      s           q   dW
+WW            s        s              WW
+Wd       q   s          s    q      q dW
+WX q  q     s            s            WW
+Wd         s              s           dW
+WW        s           P    s     q    WW
+Wd       s                  s         dW
+WW  q   s                    s        WW
+Wd     s                      s     q dW
+WW    sdddddddddddddddddddddddds      WW
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+[/map]
+[/cave]
+
+[cave]
+Name=Cave 5. Int61
+Intermission=true
+CaveDelay=8
+CaveTime=50
+DiamondsRequired=10
+DiamondValue=5 10
+Colors=Gray2 Black Gray2 Green Red
+
+[map]
+WWWWWWWWWWWWWWWWWWWW
+Wr        qqqqq   rW
+W.                .W
+W                  W
+W     .......      W
+W     .X .  .      W
+W     .  . P.      W
+W     .......      W
+W                  W
+W                  W
+W   cccccccccc     W
+WWWWWWWWWWWWWWWWWWWW
+[/map]
+[/cave]
+
+[cave]
+Name=Cave 6. Omega1
+CaveDelay=8
+CaveTime=150
+DiamondsRequired=55
+DiamondValue=1 3
+MagicWallTime=180
+Colors=Cyan Black Cyan LightBlue Green
+
+[map]
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+W.......d....................d..r..r..rW
+W.wMMMMMMMMMMMMMMMMMMMMMMMMM...........W
+W.w....r.r.....rd.......d..rM.....r...dW
+W.w.........drr.r..d.....d...M.d......dW
+W.w....d.d....rr.......d......M.....d..W
+W.w.........d.r..r..d..........M.......W
+W.w.......................M..M..M.....dW
+W.w...........r..r........rM..M..M.r.r.W
+W.wr..........d.........dr..M..Md.M...rW
+W.w........r........rrr..d...M..Md.Mr.PW
+W.wd.d.........r..d...........M.dM.dMrrW
+W.wdr..dr...........r.....d.rd.M..M..M.W
+W.wdr..r.r....drr..d...dd.......Md.M..MW
+W.w.r.d...........r...d........rrM..M..W
+W.wd...r.r....d..........d.......rMd.MdX
+W.w.r...d.r..............d.....dr..M..MW
+W.wr.d.....d..........r........d..r.M..W
+W.w...r...................r.......r..M.W
+W.wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww.W
+W.............d.............d......d...W
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+[/map]
+[/cave]
+
+[cave]
+Name=Cave 7. Starwars
+CaveDelay=8
+CaveTime=100
+DiamondsRequired=28
+DiamondValue=5 10
+AmoebaTime=1
+Colors=Orange Black Brown Gray2 White
+
+[map]
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+awr.dw..r...r.......w.d..w..dw......w..a
+aw.r....w.r......W......r.rwwrw.w.rr...a
+a...w.w...wwrw.rw..r.r.d.r.W..d..ww..w.a
+awd...r.w.....rww.w.w.dWrw...r.dww.ww..a
+ad..r....drd.w...rr.ww.r.d....w........a
+a.r.w.w..w....w.rw.......r..w..d.....Wra
+aw.d.Wr.wd.d..wr........d.rWr.rw.d.rrw.a
+a.........w...w.r.wwd.w.wrw..wd..rw...wa
+a..r........rwr.d.ww.....rr.r.wrwrrw...a
+a..Ww.w.w......rr....wdWw....Ww.wd.r...a
+a..ww..r.....r.....d.....dd.W..w.dwW..wa
+a.ww..w.w.dw.rd.....P...w.w.....wwW..rra
+aw.r.r.wr.wr.d.rw..........r.....W.dr..a
+a..d....wr..w.ww.r.w..w..rr..ww...w...ra
+arw...w....r.....ww..rd..rr....w..W.rr.a
+a.Ww.w...w.rw...wr.r.rwr.rrw...w..rwrr.a
+aw..w...wW............w.XdW..r.w..d.w..a
+a..w......r........r......ww..w.wr.w..wa
+ar....rwwW.......dw..W...rr..w..w...w..a
+a..r.w..d..r.dw.rwww.W.d..rr.w.........a
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+[/map]
+[/cave]
+
+[cave]
+Name=Cave 8. Window
+CaveDelay=8
+CaveTime=150
+DiamondsRequired=60
+DiamondValue=2 5
+Colors=Blue Black Yellow Cyan Blue
+
+[map]
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+Wr.........r......rd...rr.....  r...rr.W
+W....r..r.r....c .r..r..W.r... q.r...r.W
+W.r........r...  r..r.....r..r...r.c ..W
+W.....  ....W.W....r..r  rr.r.d....  ..W
+Wr.... q.r.rrd.r.r.....q .r..W..rrW.d..W
+W.......rr..r...r.r..r.r......rr...d..rW
+Wr.d.r........ c.r..rrr...r.r....r....rW
+W.r.r.r...P.d.  W.r.W..rrWr..r c..rr...W
+Wr.....  ..r.r.r..rr...r..rr..  rd...r.W
+Wrr....q .......r.r.. c........r.r.....W
+Wr..d.rr.........r...  ........r...  .WW
+W..r.rr...r..c .r..rr.rd....  ...r. q..W
+Wr.drd...W...  ....W.r.rr...q ......W..W
+W.....r.r.......r...............rr.....W
+Wr.....r.r...r.......  .Xr...d....W.r..W
+W...r.....r........r. q.....rWrdrr.....W
+W..r. cr.r.r  .d.r..........r......c r.W
+W.r..  .r... q.....r....rWr...W..r.  ..W
+Wd...........r.........d...r.r..r....rrW
+W.....r.......r....r....W..dW.r.r..r.r.W
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+[/map]
+[/cave]
+
+[cave]
+Name=Cave 9. Pontiac1
+CaveDelay=8
+CaveTime=150
+DiamondsRequired=30
+DiamondValue=10
+SlimePermeability=0.125
+MagicWallTime=999
+Colors=Orange Black White Gray2 Yellow
+
+[map]
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+W  c c c c c c c c c c c c c c c c c c W
+W                                      W
+W  WWW  WWW  WWW  WWW  WWW  WWW  WWW   W
+W  WrW  WrW  WrW  WrW  WrW  WrW  WrW   W
+W  WrW  WrW  WrW  WrW  WrW  WrW  WrW   W
+W  WrW  WrW  WrW  WrW  WrW  WrW  WrW   W
+W  WrW  WrW  WrW  WrW  WrW  WrW  WrW   W
+W  WrW  WrW  WrW  WrW  WrW  WrW  WrW   W
+W  WsW  WsW  WsW  WsW  WsW  WsW  WsW   W
+W  W W  W W  W W  X W  W W  W W  W W   W
+W  WMW  WMW  WMW  WMW  WMW  WMW  WMW   W
+W                                      W
+W           P                          W
+W                                      W
+W                                      W
+W                                      W
+WwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwW
+W   q   q   q   q   q   q   q   q     qW
+Wq q q q q q q q q q q q q q q q q qq  W
+W q   q   q   q   q   q   q   q   q    W
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+[/map]
+[/cave]
+
+[cave]
+Name=Cave 10. Int62
+Intermission=true
+CaveDelay=8
+CaveTime=60
+DiamondsRequired=10
+DiamondValue=10 15
+Colors=Yellow Yellow Black Red Purple
+
+[map]
+WWWWWWWWWWWWWWWWWWWW
+W..................W
+W.WWWWWWWWWWW...q..W
+Wq..........W..X.W.W
+W.WWWWWWWWWdW..W.W.W
+W.........WdW..W.W.W
+W.........WdW..W.W.W
+W........PWdW..W.W.W
+W.........WdW..WdW.W
+W.........WdW..WdW.W
+W.........WdW..WdW.W
+WWWWWWWWWWWWWWWWWWWW
+[/map]
+[/cave]
+
+[cave]
+Name=Cave 11. Tribute
+CaveDelay=8
+CaveTime=200
+DiamondsRequired=99
+DiamondValue=1 2
+AmoebaTime=200
+Colors=Red Black Red Yellow Green
+
+[map]
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+W.c.c.c.c.c.c.W                      aWW
+Wc.c.c.c.c.c.cW                      aaW
+W.c.c.c.c.c.c.W                      WWW
+Wc.c.c.c.c.c.cW                        W
+W.c.c.c.c.c.c.W                     WWWW
+Wc.c.c.c.c.c.cW                        W
+W.c.c.c.c.c.c.W                    WWWWW
+Wc.c.c.c.c.c.cW       P                W
+W.............W                   WWWWWW
+W                                      W
+W             W                  WWWWWWW
+W             W                        W
+W                               WWWWWWWW
+W             W                        W
+W             X                WWWWWWWWW
+W                                      W
+W             W               WWWWWWWWWW
+W             W                        W
+W                            WWWWWWWWWWW
+W                                      W
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+[/map]
+[/cave]
+
+[cave]
+Name=Cave 12. Frontier
+CaveDelay=8
+CaveTime=140
+DiamondsRequired=19
+DiamondValue=3 5
+Colors=Red Black White LightRed Yellow
+
+[map]
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+Wwr.................r.r............r...W
+Www..r....r.r....r......r...r...r..q..rW
+X..wwr.r.........qr......rrr...r..rq..rW
+Wrr..ww....q....r..rr.......qqr....q...W
+Wr.....wwr....r.q.r....r.r.rq.rr.P...qrW
+Wrr..rd..ww....r.rr.....r.r..rrq.rrr.r.W
+Wrd..rd...rwwr.q.......r......r.....r..W
+Wr.......rr..wwr........r...........qr.W
+W.d..r.........ww.....r.........r..r...W
+W...r..r.rd..r...ww...r..r..r.........rW
+Wr..r...r..r...r...ww....r..q..r.......W
+W.rr..r......d.r..rr.ww..rrr..r.q.rr...W
+W.r.r..r....r.....d....ww..r.r..r....r.W
+W.r...r.rr..r.rd...rr..rrww...qrrq...r.W
+Wrr....r....r....r.......r.ww...r....r.W
+Wrr.....r.d...rr......r.rr.rrww....rr..W
+W.....drdr.d...r.d.............ww....r.W
+W..rrrr.r.r..r....d..d.r........rwwr.r.W
+W..r...r..r..d..r...r.r........d...ww.rW
+W.d.r.r.....rdr..rr.rr.r.....rr...r..wwW
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+[/map]
+[/cave]
+
+[cave]
+Name=Cave 13. Twin2
+CaveDelay=8
+CaveTime=150
+DiamondsRequired=10
+DiamondValue=5 0
+Colors=Green Black Gray2 LightGreen White
+
+[map]
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+W                                      W
+W                                      W
+W                                      W
+W            rr               r.       W
+W          r...r.           .....r     W
+W        .r.r.r.rr.       .r.r.r..r.   W
+W      r.r.r.r.r....r   r.r...r....r.r W
+W      ...r.....r.r.. P ...r....r..... W
+W        r..r.rr.r.       r.r.r...r.   W
+W        ..r.r..r..       ......r...   W
+W          ......           ..r...     W
+W            ..               ..       W
+W                                      W
+Wq q q q q q q q q q q q q q q q q q q W
+WwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwW
+WwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwW
+W                                      W
+W  W   W   W   W   W   W   W   W   W   W
+W WWW WWW WWW WWW WWW WWW WWW WWW WWW  W
+W dWd dWd dWd dWd dWd dWd dWd dWd dXd  W
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+[/map]
+[/cave]
+
+[cave]
+Name=Cave 14. Dominion
+CaveDelay=8
+CaveTime=160
+DiamondsRequired=35
+DiamondValue=2 10
+MagicWallTime=120
+Colors=Red Black Brown Orange Red
+
+[map]
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+WrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrW
+WrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrW
+WrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrW
+W......................................W
+WrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrW
+W......................................W
+W                                      W
+W                                 WWWWWW
+W                                      W
+W           MMMMM MMMMM           WWWWWW
+W        MMMM         MMMM             W
+W     MMMM               MMMM     WWWWWW
+W  MMMM          P          MMMM       W
+W  q q q q                 q q q  WWWWWW
+W  MMMMMMMq q q      q q qMMMMMM       W
+W        MMMMM q  q qMMMMMM       WWWWWW
+W            MMMM MMMM                 W
+W                                 WWWWWW
+W            W W W W W                 W
+W            W W X W W                 W
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+[/map]
+[/cave]
+
+[cave]
+Name=Cave 15. Int63
+Intermission=true
+CaveDelay=8
+CaveTime=50
+DiamondsRequired=10
+DiamondValue=5 0
+AmoebaTime=1
+Colors=LightBlue Green Purple Cyan Yellow
+
+[map]
+WWWWWWWWWWWWWWWWWWWW
+W.W...W..d.........W
+W.......d.........dW
+W.....d......W..W..W
+W...W........WW.d.dW
+W..d.....a.W...d...W
+W.X.......d.Wd..W..W
+W....WW...d.P......W
+W.W...W..W........WW
+Wd.........W.dd..WdW
+W....d...W.........W
+WWWWWWWWWWWWWWWWWWWW
+[/map]
+[/cave]
+
+[cave]
+Name=Cave 16. Int64
+Intermission=true
+CaveDelay=8
+CaveTime=90
+DiamondsRequired=15
+DiamondValue=5 10
+Colors=Yellow Red Green Yellow Black
+
+[map]
+WWWWWWWWWWWWWWWWWWW
+XrrrrrrrrrrrrrrrrrW
+WP................W
+W                 W
+W                 W
+W                 W
+WcW W W WcW W W W W
+W W W W W W W W W W
+W W W W W WcW W W W
+W W W W W W W W W W
+W W WcW W W WcW W W
+WWWWWWWWWWWWWWWWWWW
+[/map]
+[/cave]
+[/game]
+[/BDCFF]

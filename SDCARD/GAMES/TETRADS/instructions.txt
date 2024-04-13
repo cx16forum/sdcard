@@ -1,0 +1,26 @@
+Thank you for trying out TETRADS.
+This game is freeware, and you may share it
+freely.  But please keep all of the files 
+together!
+
+Keyboard controls:
+-----------------
+LEFT/RIGHT/DOWN - move bricks
+Z/X - rotate left/right
+SPACE - Drop brick
+ESC or RUN/STOP - Abort game
+RETURN - Pause game
+
+SNES controls:
+-----------------
+LEFT/RIGHT/DOWN - move bricks
+Y/B - Rotate left/right
+X - Drop brick
+START - Pause
+SELECT+START - abort game
+
+The source code is also included.  This game
+was meant to help future X16 coders see some
+example code of how to do things.  It does 
+require the ACME cross-compiler to compile it.
+

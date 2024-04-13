@@ -1,0 +1,20 @@
+X16 INTRODUCTION GUIDE<CON:0D>
+<CON:FE>
+Table of Contents<CON:0D>
+<CON:0D>
+Press <CON:9A>TAB<CON:05> or use the <CON:9A>UP/DOWN<CON:05> arrows keys to select one of the following topics:<CON:0D>
+<CON:0D>
+<CON:FF><XLINK:   X16-XINFO.NFO,1> Using XINFO<CON:0D>
+<CON:FF><XLINK:X16-OVERVIEW.NFO,2> Overview of the X16 Project<CON:0D>
+<CON:FF><XLINK: X16-STARTUP.NFO,3> The X16 Startup Prompt Explained<CON:0D>
+<CON:FF><XLINK:   X16-BASIC.NFO,4> Introducing BASIC<CON:0D>
+<CON:FF><XLINK:     X16-ASM.NFO,5> Introducing Machine Language<CON:0D>
+<CON:FF><XLINK: X16-BASLOAD.NFO,6> Introducing BASLOAD<CON:0D>
+<CON:FF><XLINK: X16-HEXEDIT.NFO,7> Introducing HEXEDIT<CON:0D>
+<CON:FF><XLINK:X16-DEVTOOLS.NFO,8> X16 Developer Tools<CON:0D>
+<CON:FF><XLINK: X16-CREDITS.NFO,9> X16 Credits and Contributors<CON:0D>
+<CON:0D>
+Press <CON:9A>RETURN<CON:05> to display information about the selected topic.  If a mouse is connected to the system, you can also choose a topic by moving the mouse to the corresponding link and pressing left-click.<CON:0D>
+<CON:0D>
+Press <CON:9A>ESCAPE<CON:05> to exit XINFO and return back to the CMDR-DOS prompt.<CON:05>
+<CON:0D>

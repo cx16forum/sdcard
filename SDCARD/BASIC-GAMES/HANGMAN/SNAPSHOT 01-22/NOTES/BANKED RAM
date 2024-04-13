@@ -1,0 +1,3 @@
+Whenever you use SYS, it loads A, X, Y, and P from 780-783, and stores the values in those registers into the same locations when the called subroutine returns.
+[8:25 PM]
+SYS $FF99:NB=PEEK(780) will give you the number of RAM banks.

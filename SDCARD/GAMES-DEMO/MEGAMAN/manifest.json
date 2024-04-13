@@ -1,0 +1,65 @@
+{
+    "manifest_version": "1.0.0",
+    "name": "Mega Man  X16",
+    "author": "Random Cardboard",
+    "app_version": "1.0.0",
+    "license": "GPL 3",
+    "start_prg": "MEGAMAN.PRG",
+    "resources": [
+        "MEGAMAN.PRG",
+
+        "MEGAMAN.ANM",
+        "MEGAMAN.PAL",
+        "MEGAMAN.SPR",
+
+        "GSTAGE.PAL",
+        "GSTAGETILES.SPR",
+
+        "GUTC00.STG",
+        "GUTC01.STG",
+        "GUTC02.STG",
+        "GUTC03.STG",
+        "GUTC04.STG",
+        "GUTC05.STG",
+        "GUTC06.STG",
+
+        "GUTS00.STG",
+        "GUTS01.STG",
+        "GUTS02.STG",
+        "GUTS03.STG",
+        "GUTS04.STG",
+        "GUTS05.STG",
+        "GUTS06.STG",
+
+        "GUTTHEME.ZSM",
+        "MET.ANM",
+        "MET.PAL",
+        "MET.SPR",
+
+        "BULLET.ANM",
+        "BULLET.PAL",
+        "BULLET.SPR",
+
+        "GUTI.STG",
+
+        "GUTR00L10.STG",
+        "GUTR00L11.STG",
+        "GUTR00L12.STG",
+        "GUTR01L10.STG",
+        "GUTR02L10.STG",
+        "GUTR03L10.STG",
+        "GUTR04L10.STG",
+        "GUTR05L10.STG",
+        "GUTR06L10.STG",
+        
+        "GUTR00L00.STG",
+        "GUTR00L01.STG",
+        "GUTR00L02.STG",
+        "GUTR01L00.STG",
+        "GUTR02L00.STG",
+        "GUTR03L00.STG",
+        "GUTR04L00.STG",
+        "GUTR05L00.STG",
+        "GUTR06L00.STG"
+    ]
+}

@@ -1,0 +1,108 @@
+<TAG:TOP>
+<XLINK:TOC.NFO,TOC> Back to Table of Contents<CON:0D>
+<CON:0D>
+Using XINFO<CON:0D>
+-----------<CON:0D>
+<CON:0D>
+<CON:9E>XINFO<CON:05> is used to display Information Guides in a format appropriate to the available text mode resolutions of the X16 system.  XINFO uses "mark up" tokens within these files to display colors, provide links to other documents, and control codes for various other features.  For more technical details about these tokens, see <TLINK:TOKENS,TOKENS>.<CON:0D>
+<CON:0D>
+When a full text screen of content has been displayed, XINFO provides a pause-menu.  During this pause, users have several options available that control how they want to proceed.  The pause-menu is presented at the bottom left of the screen, in a magenta color, and will either display as "more" or "done."<CON:0D>
+<CON:0D>
+<CON:9C>[more]<CON:05> indicates that more content is available to be shown from the file.  Press <CON:9A>SPACE<CON:05> to proceed on and display the next full screen of content.<CON:0D>
+<CON:0D>
+<CON:9C>[done]<CON:05> indicates that the end of the file has been reached (and that the file index has been closed), meaning that no additional new content is available to be displayed.  Pressing <CON:9A>SPACE<CON:05> in this situation will start reading the same file again from the beginning.<CON:0D>
+<CON:0D>
+During the pause-menu, you can also do the following actions:<CON:0D>
+<CON:0D>
+- Press <CON:9A>TAB<CON:05> (or <CON:9A>SHIFT-TAB<CON:05>) or the <CON:9A>UP/DOWN<CON:05> arrow keys to select between any available links on the current page.  When selecting a link, the currently designated link is indicated next to asterick <CON:9E>"*"<CON:05> symbol.  Pressing <CON:9A>RETURN<CON:05> will navigate to the "target document" associated with that link.  When a link is selected, the filename of that document is highlighted next to the pause-menu.<CON:0D>
+<CON:0D>
+- Use the mouse to move the mouse pointer to one of these links and select a link using the left mouse button (LMB).<CON:0D>
+<CON:0D>
+- Pressing the right mouse button (RMB) is equivalent to pressing <CON:9A>SPACE<CON:05>.<CON:0D>
+<CON:0D>
+- Press <CON:9A>[<CON:05> or <CON:9A>]<CON:05> to cycle through available text modes.<CON:0D>
+<CON:0D>
+- Press <CON:9A>ESCAPE<CON:05> to exit XINFO and return back to CMDR-DOS.<CON:0D>
+<CON:0D>
+If developing your own Information Guide, XINFO also supports user-defined margins and can be configured to read files on a different device.  To read about these advanced features, see <TLINK:CONFIG,CONFIG>.<CON:0D>
+<CON:0D>
+<CON:0D>
+Screen Mode<CON:0D>
+-----------<CON:0D>
+When XINFO is started, it uses the current system screen mode.  You can find a list of screen modes by typing <CON:9A>MENU<CON:05>, select CONTROL PANEL, and go to SCREEN MODE.   This is a X16 ROM utility that will list all the screen modes and their corresponding screen mode size.   Depending on your video output (and the quality of your eyes) you may find different screen modes more suitable to the Information Guide document you are reading.<CON:0D>
+<CON:0D>
+The MENU utility built into the ROM is one way to change screen modes.  You can also use the <CON:9A>SCREEN<CON:05> keyboard from CMDR-DOS, using the same numbers as listed in the SCREEN MODE menu.  For example, <CON:9A>"SCREEN 3"<CON:05> will enable the 40x30 text mode resolution mode.<CON:0D>
+<CON:0D>
+Word Wrap<CON:0D>
+---------<CON:0D>
+When a document is written using a text editor, the author can't predict which text mode resolution will be used when reading that document.  For this situation, the concept of "word wrap" is used to automatically "wrap" a word to the next line on your display when the cursor reaches the end of a line.   A "word" is separated by spaces, so as soon as the edge of the screen is "touched" the XINFO programs searches back for the last instance a SPACE was specified, and then inserts a NEWLINE code at that position.<CON:0D>
+<CON:0D>
+There are times when it is better to have word-wrap turned off for certain rows.  For bulleted list of items or when presenting certain source code examples, typically just the first portion is important and having word wrap enabled may distract the topic.  XINFO has a special token available for such a situation.  To see more about these special tokens (including color-tokens), see  <TLINK:TOKENS,TOKENS>.<CON:0D>
+<CON:0D>
+If word wrap has been disabled for a row, a <CON:9E>">"<CON:05> arrow symbol is placed on the last margined-column of that row to indicate that more content is available but is not being displayed.  If desired, you can use the <CON:9A>"["<CON:05> and <CON:9A>"]"<CON:05> keys to cycle through the available text mode screensizes to find one that may be more suitable to the current situation.<CON:0D>
+<CON:0D>
+<CON:0D>
+<CON:FD>
+<TAG:TOKENS>
+TOKENS<CON:0D>
+------<CON:0D>
+XINFO documents consists of two type of content: (1) regular paragraphs and text to describe a topic, or (2) "control codes" that are interpreted into actions.<CON:0D>
+<CON:0D>
+The following tokens are supported:<CON:0D>
+<<CONTROL:XX>                    or <<CON:XX><CON:0D>
+<<XLINK:file-target,description> or <<XLI:tgt,desc><CON:0D>
+<<TLINK:tag-target,description>  or <<TLI:tgt,desc><CON:0D>
+<<TAG:target><CON:0D>
+<CON:0D>
+<CON:9E>XX<CON:05> is a two-digit hex value corresponding to a non-printable control code:<CON:0D>
+<CON:FF>0D = RETURN/NEWLINE<CON:0D>
+<CON:FF>FF = Disable word wrap mode for the current row<CON:0D>
+<CON:FF>FE = Line Divider (dashes till end of current line) <CON:0D>
+<CON:FF>FD = Force Menu (causes the MENU to appear where this control token appears)<CON:0D>
+Color codes use the same PETSCII conventions:<CON:0D>
+05 = WHITE<CON:0D>
+1C = RED<CON:0D>
+1E = GREEN<CON:0D>
+1F = BLUE<CON:0D>
+81 = ORANGE<CON:0D>
+90 = BLACK<CON:0D>
+95 = BROWN<CON:0D>
+96 = PINK<CON:0D>
+97 = DARK GREY<CON:0D>
+98 = GREY<CON:0D>
+99 = LIGHT GREEN<CON:0D>
+9A = LIGHT BLUE<CON:0D>
+9B = LIGHT GREY<CON:0D>
+9C = PURPLE<CON:0D>
+9E = YELLOW<CON:0D>
+9F = CYAN<CON:0D>
+<CON:0D>
+<CON:0D>
+<CON:9E>"file-target"<CON:05> is a relative path and filename to another .NFO file to be linked to.<CON:0D>
+<CON:9E>"tag-target"<CON:05> is another tag within the current file to link to.<CON:0D>
+<CON:9E>"description"<CON:05> is the name of the link that will be displayed to the screen in reverse-color.<CON:0D>
+<CON:OD>
+<TLINK:TOP,TOP> Back to top<CON:0D>
+<CON:FD>
+<CON:OD>
+<TAG:CONFIG>
+CONFIGURING XINFO<CON:0D>
+-----------------<CON:0D>
+XINFO provides two main configuration option categories: <CON:9E>margins<CON:05> and <CON:9E>file device specification.<CON:05><CON:0D>
+<CON:0D>
+Margins:<CON:0D>
+Depending on your display or how an information file ends up being presented, there may be a preference to have an additional margin at the top, bottom, left, or right side of the display.   Margins can be used to control more precisely where the Information Guide content is presented on the screen.<CON:0D>
+<CON:0D>
+File-device:<CON:0D>
+File device specifications can be used to have your .NFO files on an IEC device #9 instead of the default SD device #8.<CON:0D>
+<CON:0D>
+In both cases, typically the defaults are sufficient, which are: no margin, file id 1, file device 8, secondary channel 6.  But if there is a need to override those defaults, the easiest way is to load the XINFOCFG.PRG program, do LIST, and adjust the settings accordingly.<CON:0D>
+<CON:0D>
+XINFOCFG.PRG writes a data structure of the configuration settings to the appropriate memory region that XINFO.PRG will use.<CON:0D>
+<CON:0D>
+Another way is through command line arguments, like this:<CON:0D>
+<CON:FF><CON:9A>/XINFO.PRG<CON:05>  (load XINFO program)<CON:0D>
+<CON:FF><CON:9A>RUN:REM 2 2 2 4 3 9 8<CON:05><CON:0D>
+The numbers after REM are not ignored in this case, they will be used as numeric values passed to XINFO as command line arguments.  The order of these arguments is margins of top, bottom, left right.  Which in this example is a margin size of 2 on each side (except right side is 4), followed by file id #3, device #9, sub #8.<CON:0D>
+<CON:0D>
+

@@ -1,0 +1,29 @@
+<TAG:TOP>
+Welcome to the <CON:9F>Commander<CON:05> X16 Information Guide<CON:0D>
+<CON:FE>
+<CON:FF><XLI:BASIC/INDEX.NFO,    BASIC>    BASIC Guide<CON:0D>
+<CON:0D>
+<CON:FF><XLI:CMDR-DOS/INDEX.NFO, CMDR-DOS> X16 DOS Commands<CON:0D>
+<CON:0D>
+<CON:FF><XLI:MEMORY/INDEX.NFO,   MEMORY>   System Memory Map Chart<CON:0D>
+<CON:0D>
+<CON:FF><XLI:COLOR/INDEX.NFO,    COLOR>    Color Codes Reference<CON:0D>
+<CON:0D>
+<CON:FF><XLI:KBD/INDEX.NFO,      KEYBOARD> Keyboard Codes<CON:0D>
+<CON:0D>
+<CON:FF><TLI:ABOUT,              ABOUT>    About this Guide<CON:0D>
+<CON:0D>
+Press <CON:9E>ESCAPE<CON:05> to exit this Info Guide.<CON:0D>
+<CON:0D>
+<CON:FD>
+<CON:0D>
+<TAG:ABOUT>
+<CON:0D>
+This Info Guide describes usage aspects of the Commander X16 
+8-bit computer system.  This includes a description of the 
+BASIC keywords, the supported DOS commands, and commonly used 
+tables such as memory map addresses, keyboard codes, color codes, 
+etc.<CON:0D>
+<CON:0D>
+<TLI:TOP,TOP> Back top TOP<CON:0D>
+

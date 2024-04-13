@@ -1,0 +1,28 @@
+<TAG:TOP>
+<XLI:BASIC/INDEX.NFO,BACK> BASIC Guide<CON:0D>
+<CON:0D>
+<CON:9E>ABS<CON:05>: Absolute Value<CON:0D>
+<CON:0D>
+<TLI:EXAMPLE,EXAMPLE><CON:0D>
+<CON:0D>
+<CON:9A>DESCRIPTION<CON:05><CON:0D>
+<CON:0D>
+Typically absolute value is used to ensure a positive relative distance between values.
+<CON:0D>
+<CON:0D>
+Can absolute value work on integer and floating point?  I'm not sure, I don't remember.  
+But this is just more text fodder for demonstration purposes.
+<CON:0D>
+<CON:FD>
+<CON:0D>
+<TAG:EXAMPLE>Example usage of [ABS]:<CON:0D>
+<CON:0D>
+<CON:FF>10 T=0<CON:0D>
+<CON:FF>20 FOR I = -5 TO 5<CON:0D>
+<CON:FF>30 : PRINT <CON:9E>ABS<CON:05>(I)<CON:0D>
+<CON:FF>40 : T=T+<CON:9E>ABS<CON:05>(I)<CON:0D>
+<CON:FF>50 NEXT I<CON:0D>
+<CON:FF>60 PRINT T<CON:0D>
+<CON:0D>
+<TLI:TOP,TOP> Back to Top
+<CON:0D>

@@ -1,0 +1,51 @@
+<TAG:TOP><CON:0D>
+<CON:FF><XLI:MEMORY/INDEX.NFO,MEMORY> System Memory Map Chart<CON:0D>
+<CON:0D>
+<CON:9F>KERNAL ROUTINES<CON:05><CON:0D>
+---------------<CON:0D>
+There are over 100 KERNAL system ROM routines, all described in detail at the KERNAL section of the X16-DOCS at github X16Community.<CON:0D>
+<CON:0D>
+The following is a summary of the most commonly used KERNAL calls:<CON:0D>
+(r0-r15 refer to the Zero Page region reserved for these in-memory registers)<CON:0D>
+<CON:0D>
+<CON:FF>ADDRESS DESCRIPTION                                      INPUTS           <CON:0D>
+<CON:FF><CON:9A>$FECC   <CON:05>Enter machine language monitor                                    <CON:0D>
+<CON:FF><CON:9A>$FECF   <CON:05>get 24 random bits                                                <CON:0D>
+<CON:FF><CON:9A>$FEDB   <CON:05>Initialize console mode                                           <CON:0D>
+<CON:FF><CON:9A>$FEDE   <CON:05>Print character to console                       A C              <CON:0D>
+<CON:FF><CON:9A>$FEE1   <CON:05>Get character from console                       A                <CON:0D>
+<CON:FF><CON:9A>$FEE4   <CON:05>Fill a memory region with a byte value           A r0 r1          <CON:0D>
+<CON:FF><CON:9A>$FEE7   <CON:05>Copy a memory region to a different region       r0 r1 r2         <CON:0D>
+<CON:FF><CON:9A>$FEEA   <CON:05>Calculate the CRC16 of a memory region           r0 r1            <CON:0D>
+<CON:FF><CON:9A>$FEED   <CON:05>Decompress an LZSA2 block                        r0 r1            <CON:0D>
+<CON:FF><CON:9A>$FEF0   <CON:05>Set the image of a sprite                        r0 r1 r2L A X Y C<CON:0D>
+<CON:FF><CON:9A>$FEF3   <CON:05>Set the position of a sprite                     r0 r1 A          <CON:0D>
+<CON:FF><CON:9A>$FF23   <CON:05>Clear screen                                                      <CON:0D>
+<CON:FF><CON:9A>$FF2C   <CON:05>Draw a line                                      r0 r1 r2 r3      <CON:0D>
+<CON:FF><CON:9A>$FF47   <CON:05>Enter BASIC                                      C                <CON:0D>
+<CON:FF><CON:9A>$FF4A   <CON:05>Close all files on a device                                       <CON:0D>
+<CON:FF><CON:9A>$FF4D   <CON:05>Set the date and time                            r0 r1 r2 r3      <CON:0D>
+<CON:FF><CON:9A>$FF50   <CON:05>Get the date and time                                             <CON:0D>
+<CON:FF><CON:9A>$FF53   <CON:05>Poll controller states and save them                              <CON:0D>
+<CON:FF><CON:9A>$FF5F   <CON:05>Get/set screen mode                              A C              <CON:0D>
+<CON:FF><CON:9A>$FF62   <CON:05>Activate 8x8 text mode charset                   A X Y            <CON:0D>
+<CON:FF><CON:9A>$FF68   <CON:05>Configure mouse pointer                          A X Y            <CON:0D>
+<CON:FF><CON:9A>$FF6B   <CON:05>Get saved mouse sate                             X                <CON:0D>
+<CON:FF><CON:9A>$FF6E   <CON:05>Execute a routine on another RAM or ROM bank     PC+3 PC+5        <CON:0D>
+<CON:FF><CON:9A>$FF71   <CON:05>Poll mouse state and save it                                      <CON:0D>
+<CON:FF><CON:9A>$FF74   <CON:05>Read a byte from any RAM or ROM bank             (A) X Y          <CON:0D>
+<CON:FF><CON:9A>$FF77   <CON:05>Write a byte to any RAM bank                     stavec A X Y     <CON:0D>
+<CON:FF><CON:9A>$FFCF   <CON:05>BASIN/CHRIN: Get character                                        <CON:0D>
+<CON:FF><CON:9A>$FFD2   <CON:05>BSOUT/CHROUT: Write byte in A to default output. A                <CON:0D>
+<CON:FF><CON:9A>$FFD5   <CON:05>Load a file into main memory or VRAM             A X Y            <CON:0D>
+<CON:FF><CON:9A>$FFD8   <CON:05>Save a file from memory                          A X Y            <CON:0D>
+<CON:FF><CON:9A>$FFDB   <CON:05>Write system clock                               A X Y            <CON:0D>
+<CON:FF><CON:9A>$FFDE   <CON:05>Read system clock                                                 <CON:0D>
+<CON:FF><CON:9A>$FFE1   <CON:05>Test for STOP key                                                 <CON:0D>
+<CON:FF><CON:9A>$FFE4   <CON:05>Get character from keyboard                                       <CON:0D>
+<CON:FF><CON:9A>$FFE7   <CON:05>Close all channels                                                <CON:0D>
+<CON:FF><CON:9A>$FFED   <CON:05>Get the screen resolution                                         <CON:0D>
+<CON:FF><CON:9A>$FFF0   <CON:05>Read/write cursor position                       A X Y            <CON:0D>
+<CON:0D>
+<TLINK:TOP,TOP> Back to KERNAL top.<CON:0D>
+<CON:0D>

@@ -1,0 +1,29 @@
+<TAG:TOP>
+<XLI:BASIC/INDEX.NFO,BACK> BASIC Guide<CON:0D>
+<CON:0D>
+<CON:9E>DIM<CON:05>: Dimension and Array<CON:0D>
+<CON:0D>
+<TLI:EXAMPLE,EXAMPLE><CON:0D>
+<CON:0D>
+<CON:9A>DESCRIPTION<CON:05><CON:0D>
+<CON:0D>
+The DIM statement is used to dimension an array, which means to allocate enough space for the data the array will hold.  An array variable needs to be DIM'd before using it unless it will only hold eleven or fewer elements.  In all other cases, the DIM statement must be
+used.
+<CON:0D>
+<CON:0D>
+To dimension an array variable, use DIM followed by the variable name.  Then, the size of each dimension of the array should be given, separated by commas and surrounded by parentheses.  An array can have one or more dimensions, and each dimension can be as large as needed.  The total number of elements in an array can be calculated by multiplying the size of each of the array's dimensions.  The DIM statement can dimension multiple arrays at once by separating each array with a comma.  Once dimensioned, arrays can be used be used just like other variables, except that the index into each dimension must be specified.
+<CON:0D>
+<CON:0D>
+<TAG:EXAMPLE>Examples usage of [DIM]:<CON:0D>
+<CON:0D>
+<CON:FF>10 DIM A<CON:0D>
+<CON:FF>20 A$(1,1) = "ONE"<CON:0D>
+<CON:FF>30 A$(2,6) = "TWO"<CON:0D>
+<CON:FF>40 PRINT A$(1,1) REM PRINTS "ONE"<CON:0D>
+<CON:FF>50 PRINT A$(2,6) REM PRINTS "TWO"<CON:0D>
+<CON:FF>60 PRINT A$(1,6) REM PRINTS NOTHING<CON:0D>
+<CON:0D>
+Executing a DIM statement on an array more than once will cause an error.  It is a best practice to keep all the DIM statements towards the beginning of a program.
+<CON:0D>
+<TLI:TOP,TOP> Back to Top
+<CON:0D>

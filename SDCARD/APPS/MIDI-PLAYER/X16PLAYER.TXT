@@ -1,0 +1,26 @@
+Usage: LOAD "x16player.prg"
+RUN
+
+ENTER MIDI FILENAME:
+[MIDI Filename].MID
+
+Midi file must be located in the same folder as the x16emu.exe emulator.
+
+Keys:
+1 Channel Volumes
+2 Midi Notes
+3 6 String Guitar Fretboard
+4 4 String Bass Fretboard
+5 5 String Bass Fretboard
+7 Vocals
+
++) Next Channel (Guitar/Bass/Vocals Only)
+-) Previous Channel (Guitar/Bass/Vocals Only)
+
+Ctrl-C RUN/STOP) Exit Player
+
+Known Issues:
+Not all MIDI events are supported.
+Pitch Bend not 100% accurate.
+
+by Joshua Bair

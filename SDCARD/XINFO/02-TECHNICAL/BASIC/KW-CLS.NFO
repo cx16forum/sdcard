@@ -1,0 +1,12 @@
+<TAG:TOP>
+<XLI:BASIC/INDEX.NFO,BACK> BASIC Guide<CON:0D>
+<CON:0D>
+<CON:9E>CLS<CON:05>: Clear the Screen<CON:0D>
+<CON:0D>
+<CON:9A>DESCRIPTION<CON:05><CON:0D>
+<CON:0D>
+The CLS command clears the screen. This has the same effect as typing PRINT CHR$(147) or typing SHIFT+CLR\HOME.  This command is useful when programs and commands have cluttered up the screen, and is also useful in BASIC programs to PRINTing to an empty screen.
+<CON:0D>
+<CON:0D>
+<TLI:TOP,TOP> Back to Top
+<CON:0D>

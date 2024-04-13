@@ -1,0 +1,48 @@
+https://cx16forum.com/forum/viewtopic.php?t=6528
+TediusTimmy
+
+Commands:
+WASD and Cursor keys - Navigate the sheet
+z or Home - Go to cell A0
+[ - Decrease the size of the current column
+] - Increase the size of the current column
+' or " - Insert a label in this cell, overwriting previous contents
+= or + - Insert a formula in this cell, overwriting previous contents
+! - Recalculate sheet
+xx - Delete the current cell's contents
+xr - Delete the current row's contents
+xc - Delete the current column's contents
+uu - Remove the current cell and shift cells right
+uo - Remove the current cells and shift cells up
+ur - Remove the current row
+uc - Remove the current column
+ii - Insert a cell and shift cells right
+ir - Insert a row
+ic - Insert a column
+oo - Insert a cell and shift cells down
+or - Insert a row below the current row
+oc - Insert a column to the right of the current column
+e - Edit the current cell (if it has contents)
+q - Quit: you must follow a q with a y to really quit.
+, - Toggle comma as the output decimal separator
+j - Toggle row/column-major recalculation
+k - Toggle left-to-right or right-to-left recalculation
+l - Toggle top-to-bottom or bottom-to-top recalculation
+n - Save file (use contents of current cell as file name)
+m - "Load" file (use contents of current cell as file name)
+ENTER - Exit edit mode
+Formulas:
+3 + @sum(A0; 2; 3; A2:B4)
+5 + 2 * 3 - 7 / (3 + -5)
+The supported functions are sum, count, average, min, max, trunc, round, and abs.
+
+UPDATE 27 Oct 2023:
+I reworked and removed the 14KB table. This has allowed me to:
+* Increase the number of columns to 26.
+* Add commands to insert and remove rows and columns.
+I have also:
+* Improved the performance when you aren't scrolling the screen.
+* Improved the performance of file load.
+* Moved to 80x30 text mode.
+Not fixed:
+* File load/save on real hardware.

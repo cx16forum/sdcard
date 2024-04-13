@@ -1,0 +1,7 @@
+{
+    "manifest_version": "1.0.0",
+    "name": "Rock Runner",
+    "author": "DesertFish",
+    "start_prg": "ROCKRUNNER.PRG"
+}
+

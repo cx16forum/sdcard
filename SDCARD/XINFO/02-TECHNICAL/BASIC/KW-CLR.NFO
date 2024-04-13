@@ -1,0 +1,15 @@
+<TAG:TOP>
+<XLI:BASIC/INDEX.NFO,BACK> BASIC Guide<CON:0D>
+<CON:0D>
+<CON:9E>CLR<CON:05>: Clear BASIC Variables<CON:0D>
+<CON:0D>
+<CON:9A>DESCRIPTION<CON:05><CON:0D>
+<CON:0D>
+The CLR command clears the BASIC variables from memory.  This includes variables that were assigned values while running BASIC programs as well as any BASIC assignments that were called from the READY prompt directly.  Variables cleared with CLR cannot be restored with the OLD command.
+<CON:0D>
+<CON:0D>
+The CLR command runs automatically whenever the RUN command is called, so that each run of a program starts with a cleared variables state.  CLR is not called when the CONT command is run, so that a prgram can continue where it left off with the variable state in tact.
+<CON:0D>
+<CON:0D>
+<TLI:TOP,TOP> Back to Top
+<CON:0D>

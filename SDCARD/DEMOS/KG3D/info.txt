@@ -1,0 +1,13 @@
+kgsws' 3D Proof-of-Concept for Commander x16
+
+Use W/S/A/D to move.
+Use LEFT/RIGHT to turn.
+Use MOUSE to turn and look.
+Use SPACE to jump.
+
+This is test binary for VERA debug.
+
+Test 0: original code.
+Test 1: single 'lda VERA_FX_ACCUM_RESET' is replaced by four
+Test 2: load of 'VERA_FX_ACCUM_RESET' and 'VERA_FX_ACCUM' is replaced by DCSEL=2 access of 'VERA_FX_MULT'
+

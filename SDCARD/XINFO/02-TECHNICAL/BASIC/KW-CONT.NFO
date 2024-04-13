@@ -1,0 +1,15 @@
+<TAG:TOP>
+<XLI:BASIC/INDEX.NFO,BACK> BASIC Guide<CON:0D>
+<CON:0D>
+<CON:9E>CONT<CON:05>: Continue Running a Stopped Program<CON:0D>
+<CON:0D>
+<CON:9A>DESCRIPTION<CON:05><CON:0D>
+<CON:0D>
+When a program has been stopped by either using the RUN\STOP key, a STOP statement, or an END statement within the program, it can be restarted by using the CONT command.  The CONT command will continue executing the loaded program at the exact place from which it left off, with all the variables intact.
+<CON:0D>
+<CON:0D>
+The CONT command will not always work, however.  If you make any modifications to your program while it is stopped, the CONT command will fail and display a CAN'T CONTINUE ERROR.  This is true even if you LIST the program and hit RETURN while the cursor is on a line of the program...even if you didn't make any modifications.  To the X16, this is still considered a change to the program, so the only way to run it again is to start at the beginning of the program by using the RUN command.
+<CON:0D>
+<CON:0D>
+<TLI:TOP,TOP> Back to Top
+<CON:0D>

@@ -1,0 +1,36 @@
+<XLI:INDEX.NFO,START> Start of Guide<CON:0D>
+<CON:0D>
+<CON:9C>C<CON:9A>om<CON:9F>ma<CON:99>nd<CON:9E>e<CON:1C>r<CON:05> X16 DOS (CMDR-DOS)<CON:0D>
+<CON:FE>
+<CON:FF>MENU      Show System Config Menu<CON:0D>
+<CON:FF>BANNER    Show Logo and System Memory Amount<CON:0D>
+<CON:FF>REBOOT    Soft Reboot (retain memory)<CON:0D>
+<CON:FF>POWEROFF  Power down the system<CON:0D>
+<CON:FF>RESET     Hard Reset (like power cycle)<CON:0D>
+<CON:FF>HELP      Show Version Info<CON:0D>
+<CON:0D>
+<CON:FF>DOS"$"or F7      List Directory Content<CON:0D>
+<CON:FF>@$      (short)  List Directory Content<CON:0D>
+<CON:FF>@$=C             Show Current Directory<CON:0D>
+<CON:FF>@$=L             Long Directory Listing<CON:0D>
+<CON:FF>DOS"S:FILE"      Scratch/Erase FILE<CON:0D>
+<CON:FF>DOS"R:NEW=OLD"   Rename a file to NEW from OLD<CON:0D>
+<CON:FF>DOS 9            Set Device #9 as Default<CON:0D>
+<CON:FF>DOS 8            Set Device #8 as Default<CON:0D>
+<CON:0D>
+<CON:FF>@CD:FOLDER       Change Directory to FOLDER<CON:0D>
+<CON:FF>DOS"CD:FOLDER"   Change Directory to FOLDER<CON:0D>
+<CON:FF>@CD:/            Return to root folder<CON:0D>
+<CON:FF>@CD:..           Go to previous folder<CON:0D>
+<CON:0D>
+<CON:FF>LOAD "FILE.PRG"  Load FILE<CON:0D>
+<CON:FF>/FILE.PRG        Load FILE<CON:0D>
+<CON:0D>
+<CON:FF>SAVE"FILE.PRG"   Save to FILE<CON:0D>
+<CON:FF>SAVE"@:FILE.PRG" Overwrite FILE<CON:0D>
+<CON:0D>
+These are only the most commonly used commands, there are many other supported commands, including partition management commands.<CON:0D>
+<CON:0D>
+<XLI:CMDR-DOS/IEC-SUPPORT/INDEX.NFO,IEC> IEC support<CON:0D>
+<CON:0D>
+<CON:0D>

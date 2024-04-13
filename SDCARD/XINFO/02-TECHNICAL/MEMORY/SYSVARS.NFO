@@ -1,0 +1,59 @@
+<TAG:TOP><CON:0D>
+<CON:FF><XLI:MEMORY/INDEX.NFO,MEMORY> System Memory Map Chart<CON:0D>
+<CON:0D>
+<CON:9F>$0200-$03FF<CON:05> KERNAL/BASIC Variables<CON:0D>
+----------- (512 bytes)<CON:0D>
+<CON:0D>
+The frambuffer (FB) supporting jump vectors (for SCREEN $80) are defined in this region:<CON:0D>
+<CON:FF><CON:9A>$02E4<CON:05> I_FB_init<CON:0D>
+<CON:FF><CON:9A>$02E6<CON:05> I_FB_get_info<CON:0D>
+<CON:FF><CON:9A>$02E8<CON:05> I_FB_set_palette<CON:0D>
+<CON:FF><CON:9A>$02EA<CON:05> I_FB_cursor_position<CON:0D>
+<CON:FF><CON:9A>$02EC<CON:05> I_FB_cursor_next_line<CON:0D>
+<CON:FF><CON:9A>$02EE<CON:05> I_FB_get_pixel<CON:0D>
+<CON:FF><CON:9A>$02F0<CON:05> I_FB_get_pixels<CON:0D>
+<CON:FF><CON:9A>$02F2<CON:05> I_FB_set_pixel<CON:0D>
+<CON:FF><CON:9A>$02F4<CON:05> I_FB_set_pixels<CON:0D>
+<CON:FF><CON:9A>$02F6<CON:05> I_FB_set_8_pixels<CON:0D>
+<CON:FF><CON:9A>$02F8<CON:05> I_FB_set_8_pixels_opaque<CON:0D>
+<CON:FF><CON:9A>$02FA<CON:05> I_FB_fill_pixels<CON:0D>
+<CON:FF><CON:9A>$02FC<CON:05> I_FB_filter_pixels<CON:0D>
+<CON:FF><CON:9A>$02FE<CON:05> I_FB_move_pixels<CON:0D>
+<CON:0D>
+<CON:FF><CON:9A>$030C<CON:05> Register A<CON:0D>
+<CON:FF><CON:9A>$030D<CON:05> Register X<CON:0D>
+<CON:FF><CON:9A>$030E<CON:05> Register Y<CON:0D>
+<CON:FF><CON:9A>$030F<CON:05> Status Register/Flags<CON:0D>
+(the above can be used before and after SYS call from BASIC to set registers for use going into KERNAL calls, or examining the results from KERNAL calls)<CON:0D>
+<CON:0D>
+<CON:FF><CON:9A>$0311-$0312<CON:05> BASIC USR keyword jump address<CON:0D>
+<CON:0D>
+The KERNAL vectors ($0314-$0333) are fully compatible with the C64:<CON:0D>
+<CON:FF><CON:9A>$0314-$0315<CON:05> CINV   IRQ Interrupt Routine<CON:0D>
+<CON:FF><CON:9A>$0316-$0317<CON:05> CBINV  BRK Instruction Interrupt<CON:0D>
+<CON:FF><CON:9A>$0318-$0319<CON:05> NMINV  Non-Maskable Interrupt<CON:0D>
+<CON:FF><CON:9A>$031A-$031B<CON:05> OPEN   Routine<CON:0D>
+<CON:FF><CON:9A>$031C-$031D<CON:05> CLOSE  Routine<CON:0D>
+<CON:FF><CON:9A>$031E-$031F<CON:05> CHKIN  Routine<CON:0D>
+<CON:FF><CON:9A>$0320-$0321<CON:05> CKOUT  Routine<CON:0D>
+<CON:FF><CON:9A>$0322-$0323<CON:05> CLRCHN Routine<CON:0D>
+<CON:FF><CON:9A>$0324-$0325<CON:05> CHRIN  Routine<CON:0D>
+<CON:FF><CON:9A>$0326-$0327<CON:05> CHROUT Routine<CON:0D>
+<CON:FF><CON:9A>$0328-$0329<CON:05> STOP   Routine<CON:0D>
+<CON:FF><CON:9A>$032A-$032B<CON:05> GETIN  Routine<CON:0D>
+<CON:FF><CON:9A>$032C-$032D<CON:05> CLALL  Routine<CON:0D>
+<CON:FF><CON:9A>$0330-$0331<CON:05> LOAD   Routine<CON:0D>
+<CON:FF><CON:9A>$0332-$0333<CON:05> SAVE   Routine<CON:0D>
+<CON:0D>
+<CON:FF><CON:9A>$0372      <CON:05> KERNAL_MODE (current character set mode, PETSCII vs ISO)<CON:0D>
+<CON:FF><CON:9A>$0376      <CON:05> Current text mode color value (BG|FG)<CON:0D>
+<CON:FF><CON:9A>$0386      <CON:05> X column in text mode (get_screen_resolution)<CON:0D>
+<CON:FF><CON:9A>$0387      <CON:05> Y row in text mode (get_screen_resolution)<CON:0D>
+<CON:FF><CON:9A>$03AF      <CON:05> fetchvec (used by fetch KERNAL call)<CON:0D>
+<CON:FF><CON:9A>$03B2      <CON:05> stavec (used by stash KERNAL call)<CON:0D>
+<CON:0D>
+<CON:FF><CON:9A>$FF6E      <CON:05> JSRFAR vector<CON:0D>
+<CON:FF><CON:9A>$FF80      <CON:05> System ROM Version ($FF=custom, negative=prerelease)<CON:0D>
+<CON:0D>
+<TLINK:TOP,TOP> Back to KERNAL/BASIC Variables top.<CON:0D>
+<CON:0D>

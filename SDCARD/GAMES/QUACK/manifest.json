@@ -1,0 +1,18 @@
+{
+    "manifest_version": "1.0.0",
+    "name": "Quack",
+    "author": "Cameron/totodilespy",
+    "app_version": "1.0.0",
+    "license": "None",
+    "start_prg": "QUACK.PRG",
+    "resources": [
+        "QUACK.PRG",
+		"DR.BIN",
+		"LETTER.BIN",
+		"OFFICE.BIN",
+		"PALETTE.BIN",
+		"SPRITES.BIN",
+		"KILL.ZCM",
+		"MOVE.ZCM"
+    ]
+}
