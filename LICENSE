@@ -1,24 +1,46 @@
-This is free and unencumbered software released into the public domain.
 
-Anyone is free to copy, modify, publish, use, compile, sell, or
-distribute this software, either in source code form or as a compiled
-binary, for any purpose, commercial or non-commercial, and by any
-means.
+# License
 
-In jurisdictions that recognize copyright laws, the author or authors
-of this software dedicate any and all copyright interest in the
-software to the public domain. We make this dedication for the benefit
-of the public at large and to the detriment of our heirs and
-successors. We intend this dedication to be an overt act of
-relinquishment in perpetuity of all present and future rights to this
-software under copyright law.
+Copyright 2024 Commander X16 Community
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
+This _collection_ of software is freely available for download and
+individual use by the general public.
 
-For more information, please refer to <https://unlicense.org>
+You may download and use this collection on:
+
+* A Commander X16
+* The official Commander X16 emulator
+* Authorized Commander X16 clones, such as the Otter X16.
+
+You may _not_ modify, reverse engineer, or sell this collection. Unless
+separately authorized, you may not use elements of this collection in
+other software collections, in whole or in part.
+
+The software in this repository is licensed by its individual creators,
+and rights for those programs are retained by the original creators.
+
+## Submissions
+
+We may ask you for permission to include your software in this collecton.
+If you accept, you will be granting us the right to distribute your
+software on the same terms as listed above. You will still own your
+full Copyright, with all other rights reserved by you.
+
+## Technical Requirements
+
+Software submitted to this archive must meet certain performance
+and reliability requirements. 
+
+* The program must operate on a 65C02 or 65C816 CPU.
+* The program must be usable on a composite monitor.
+* The program must operate (not crash) if the Yamaha FM synthesizer
+  is removed from the host computer.
+
+In some cases, composite mode or operating without an FM chip
+will offer reduced capabilities. For example, we don't expect a
+music program to play all of the available channels if the FM chip
+is not present.
+
+If you're not sure how to implement composite-safe video and
+FM-safe sound, please join us on the forums or the community 
+Discord at https://www.commanderx16.com
