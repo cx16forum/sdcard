@@ -40,9 +40,11 @@ until you have removed the quote, like this:
 ## Dos Wedge
 
 The @ symbol and the > symbol, when used at the start of the line,
-are known as the DOS Wedge. Back in the PET days, the Wedge was 
-an extra utility you had to load each time, and the > symbol activated
-Wedge commands. (You can still use > instead of @. Try it: `>$`).
+are known as the DOS Wedge. 
+
+Back in the PET days, the Wedge was an extra utility you had to load each
+time, and the > symbol activated Wedge commands. You can still use >
+instead of @. Go ahead, give it a try: `>$`
 
 The DOS wedge allows you to issue quick commands from BASIC with the > or @
 symbol.
