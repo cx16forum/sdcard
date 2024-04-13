@@ -1,0 +1,3 @@
+The GitHub repository does not (yet) have the SD Card files loaded. 
+
+This is a placeholder for those files in the future.

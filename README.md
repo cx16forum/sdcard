@@ -37,6 +37,9 @@ until you have removed the quote, like this:
 
 `@CD:DEMOS"         DIR`
 
+If a directory has an `AUTOBOOT.X16` file, you can type `BOOT` to start the 
+program. Otherwise, look for a `.PRG` file that seems correct.
+
 ## Dos Wedge
 
 The @ symbol and the > symbol, when used at the start of the line,
@@ -63,6 +66,49 @@ symbol.
 
 We'll include this listing on the SD Card, for your convenience.
   
+## Standards
+
+If a program has multiple executables, we may include an AUTOBOOT.X16 file in
+the program directory. Just type `BOOT` to automatically start the correct
+executable, in that case.
+
+### Filename Extensions
+
+* Tokenized BASIC and machine language binaries: `.PRG`
+* Plain-text, line numbered BASIC programs: `.BAS`
+* BASLOAD compatible BASIC programs: `.BL`
+  * The first line should indicate ISO mode and line endings:
+* Text files with PETSCII graphics: `.PET`
+
+You can also hint at line endings and encoding by adding an encoding string at
+the top of your file:
+
+```
+BASLOAD source code
+## BASLOAD PET CR   (Commander)
+## BASLOAD ISO LF   (Linux)
+## BASLOAD ISO CRLF (DOS/Windows)
+
+Plain text files
+## ANSI CRLF        (DOS/Windows)
+## ANSI LF          (invalid)
+## ISO CRLF         (DOS/Windows)
+## ISO LF           (Linux)
+## PET CR           (Commander/Commodore)
+```
+
+Note that `ANSI LF` should never be used, since the ANSI terminal standard
+requires CRLF to start a new line.
+
+So why have BASLOAD at the start of a BASLOAD source file?
+
+One of my pet peeves when browsing GitHub is to see a repository with no
+information on how to build a program and what toolchain is needed. However,
+someone can do a web search for BASLOAD, and the first verbatim link goes to our
+forums, where Stefan has posted an early beta of his program.
+
+
+
 ## Submissions
 
 We may ask you for permission to include your software in this collecton.
