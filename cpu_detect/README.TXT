@@ -1,9 +1,8 @@
 ISO/CRLF
 
 This version of AUTOBOOT.X16 is customized with a CPU detection routine. 
-
-BASLOAD (.BL) files are included, to make it easy to edit the program for your
-needs.
+This allows you to use separate binaries for 65C816 and 65C02 versions of
+your program, if needed.
 
 To use:
 
