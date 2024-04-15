@@ -61,8 +61,8 @@ So a complete encoding tag for BASLOAD might look like
 
 ```
 ## BASLOAD PETSCII CRLF E2 - created on Commander
-; 64TASS ASCII CRLF E7 - created on Windows
+; 64TASS ASCII CRLF E7 - assembly program created on Windows
 // cc65 ISO LF - created on Linux
-; prog8 ASCII CRLF E1
-
+; prog8 ASCII CRLF E1 - prog8 program written on Windows
+ANSI CRLF - text file with ANSI escape codes and CP437 text.
 ```
