@@ -22,19 +22,24 @@ in text files.
 
 So we are proposing the following standard to describe the encoding of a text file:
 
-`## [compiler|assembler] {PET|PETSCII|ASCII} [CRLF|CR|LF] [Ex]`
+`## [tool] {PET|PETSCII|ASCII} [CRLF|CR|LF] [Ex]`
 
-* Start the line with a comment character and the compiler or assembler used for this code:
-  * `## BASLOAD`
+For example: `## BASLOAD ASCII CRLF` 
+
+* Start the line with a comment character and the compiler or assembler used for this code.
+  * `## BASLOAD` for
+  * REM BASIC2
   * ; ca65
   * // cc65
   * ; prog8
+  * Plain Text: Do not prefix the line; leave this portion off.
 * Character Encoding
   * PET or PETSCII (uppper case/graphics)
   * pet or petscii (upper/lower case mode)
   * ASCII (ASCII encoding, includes ISO and ANSI modes)
     * ISO (ISO-8859-15, or character set 1)
-    * ANSI (CP437, character set 7)
+    * CP437 (uses CP437 character set, as seen on IBM PC)
+    * ANSI (CP437 with ANSI escape codes)
 * Line Ending
   * CR (default)
   * CRLF (for files created on Windows. LF is ignored by default)
@@ -59,4 +64,5 @@ So a complete encoding tag for BASLOAD might look like
 ; 64TASS ASCII CRLF E7 - created on Windows
 // cc65 ISO LF - created on Linux
 ; prog8 ASCII CRLF E1
+
 ```
