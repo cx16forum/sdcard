@@ -111,14 +111,14 @@ forums, where Stefan has posted an early beta of his program.
 
 ## Submissions
 
-We may ask you for permission to include your software in this collecton.
+We may ask you for permission to include your software in the collection.
 If you accept, you will be granting us the right to distribute your
 software on the same terms as listed above. You will still own your
 full Copyright, with all other rights reserved by you.
 
-We are not currently accepting open submissions. To be considered
-for inclusion, programs should be uploaded to the [Commander X16 forum](https://cx16forum.com)
-and meet the technical requirements listed below. 
+To be considered for inclusion, programs should be uploaded to the 
+[Commander X16 forum](https://cx16forum.com) and meet the technical
+requirements listed below.
 
 In addition, programs should demonstrate one or more of the X16's features
 in a useful, entertaining, or interesting way. 
