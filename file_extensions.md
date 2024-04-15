@@ -22,22 +22,31 @@ in text files.
 
 So we are proposing the following standard to describe the encoding of a text file:
 
-`## [compiler|assembler] {PET|PETSCII|ISO|ASCII} [CRLF|CR|LF] [Ex]`
+`## [compiler|assembler] {PET|PETSCII|ASCII} [CRLF|CR|LF] [Ex]`
 
-* Begin the line with ##. This signifies a comment in BASLOAD. For other
-  programming languages, use the correct comment character: ;, //, etc
-* PET for PETSCII, pet (lower case) for PETSCII upper/lower case, and ISO or ASCII for ISO or ASCII.
-  (ISO and ASCII are synonomous in this context.)
-* CRLF, CR, or LF line endings.
-  * If not stated, assume CR and ignore LF characters.
-* E followed by the character set
+* Start the line with a comment character and the compiler or assembler used for this code:
+  * `## BASLOAD`
+  * ; ca65
+  * // cc65
+  * ; prog8
+* Character Encoding
+  * PET or PETSCII (uppper case/graphics)
+  * pet or petscii (upper/lower case mode)
+  * ASCII (ASCII encoding, includes ISO and ANSI modes)
+    * ISO (ISO-8859-15, or character set 1)
+    * ANSI (CP437, character set 7)
+* Line Ending
+  * CR (default)
+  * CRLF (for files created on Windows. LF is ignored by default)
+  * LF (for files created on Linux)
+* E followed by the character set.
   * E1  Standard ISO character set
-  * E2       PETSCII upper/graphic
-  * e3       PET upper/lower
-  * E4       PETSCII upper/graphic (thin)
-  * e5       PET upper/lower (thin)
-  * e6       ISO (thin)
-  * E7  CP437, ANSI, IBM Extended ASCII
+  * E2  PETSCII upper/graphic
+  * e3  PET upper/lower
+  * E4  PETSCII upper/graphic (thin)
+  * e5  PET upper/lower (thin)
+  * E6  ISO (thin)
+  * E7  CP437 (aka ANSI or IBM PC Extended ASCII)
   * E8  Cyrillic ISO
   * E9  Cyrillic ISO (thin)
   * EA  Eastern Latin ISO 
@@ -49,4 +58,5 @@ So a complete encoding tag for BASLOAD might look like
 ## BASLOAD PETSCII CRLF E2 - created on Commander
 ; 64TASS ASCII CRLF E7 - created on Windows
 // cc65 ISO LF - created on Linux
+; prog8 ASCII CRLF E1
 ```
