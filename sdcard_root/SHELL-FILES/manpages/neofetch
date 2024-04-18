@@ -1,0 +1,23 @@
+@; this is intended to be read via man command
+@hneofetch@n displays information about the system in an aesthetic manner. 
+
+@eSYNTAX:@n
+
+@p$@n neofetch @p[layout]
+
+layout@n is an integer value, that corresponds to layout id. Layouts 0-11 correspond to the defaults used by screen modes 0-11. Numbers larger than that are additional layouts.
+If no layout id is provided, the default layout of a the current screen mode is displayed
+
+@eEXAMPLES:
+
+@p$@n neofetch
+  @hDisplays a usual neofetch output
+
+@p$@n neofetch 4
+  @hDisplays only a text system info - no logo
+
+@p$@n neofetch 12
+  @hDisplays a small neofetch logo next to the text
+
+
+@pneofetch cx16 edition created by Adiee5. licensed under MIT@n
