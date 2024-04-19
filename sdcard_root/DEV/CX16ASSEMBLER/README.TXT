@@ -1,7 +1,7 @@
 
 ASSEMBLER - PROG8 COMPILED ASSEMBLER BY DESERTFISH
 
-LOAD "CX16ASSEMBLER.PRG"
+LOAD "ASSEMBLER.PRG"
 RUN
 
 ENTER COMMAND: x hello.asm
@@ -25,6 +25,7 @@ header of the binary to know where to load it into RAM.
 This location is also where your SYS call will be used
 to run the program (e.g. SYS $9000, SYS $A000, SYS $0400, etc).
 
-
-
-
+For most up to date version, visit:
+https://cx16forum.com/forum/viewtopic.php?t=6294
+and for the source, visit:
+https://github.com/irmen/cx16assem
