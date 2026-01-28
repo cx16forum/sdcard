@@ -1,0 +1,117 @@
+; Debug/Test cave(s).
+
+[BDCFF]
+[game]
+Name=Debug/Test
+Author=Irmen de Jong
+Charset=Original
+Fontset=Original
+Levels=1
+Caves=3
+
+[cave]
+Name=Test Cave 1
+Description=To test mechanics with
+CaveDelay=8
+CaveTime=200
+DiamondsRequired=5
+DiamondValue=1 3
+MagicWallTime=20
+AmoebaTime=60
+SlimePermeability=0.750
+Colors=Black Black Orange Brown Cyan
+
+[map]
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+W           r                          W
+W          dd                          W
+W        dr r                          W
+W       rd  d                          W
+W       r   r                          W
+W      d    d                          W
+W     r     r         Q  Q  Q  Q       W
+W......................................W
+W          C  C  C  C                  W
+W            rd                        W
+Wssss...sssssssssssssssssssssssssssssssW
+W          P                           W
+W                        rrr%%%ddDD    W
+W      .r.    .d...      ......d...    W
+W      ...    ...x...    MMMMMMMMMM    W
+W      . .   .. ...V.                  W
+W      . .   v. . ...                  W
+W      . .   .. .         W  aa  W     W
+W      . .    . .         WWWWWWWW     H
+W      .C.    .Q.                      X
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+[/map]
+[/cave]
+
+[cave]
+Name=Can pickup all diamonds?
+Description=Should be able to pick up ALL diamonds
+CaveDelay=8
+CaveTime=200
+DiamondsRequired=5
+DiamondValue=1 3
+MagicWallTime=20
+AmoebaTime=60
+SlimePermeability=0.750
+Colors=Black Black Orange Brown Cyan
+
+[map]
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+W             W
+W             W
+W             W
+W    r   P    W
+W             W
+W             W
+W             W
+W             W
+W         ddd X
+Wc        ddd W
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+[/map]
+[/cave]
+
+[cave]
+Name=Pillar of fire bug
+Description=Fire explosion animation BUG!
+CaveDelay=8
+CaveTime=200
+DiamondsRequired=5
+DiamondValue=1 3
+MagicWallTime=20
+AmoebaTime=60
+SlimePermeability=0.750
+Colors=Black Black Orange Brown Cyan
+
+[map]
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+WrrrrrrrrrrrrWWWWWWWWrrrrrWWWWWWWrdrdrWW
+W............ W      .....      WcdcdcWW
+WW W W W WcWW W WWWWWWWcWWWWWWW WrwrwrWW
+WW W W W W WW W Wwwwwww wwwwwwW WrwrwrWW
+Ww w w wcw wW W Wwwwwww wwwwwwW WqrqrqWW
+Ww w w w w wW W Wwwwww w wwwwwW WrwrwrWW
+Ww w wcw w wW W WwwwwwcwcwwwwwW WrwrwrWW
+Ww w w w w wW W WwwwwwwwwwwwwwW WqrqrqWW
+Ww wcw w w wW W Wwwww w w wwwwW WrwrwrWW
+Ww w w w w wW W WwwwwcwcwcwwwwW WrwrwrWW
+Wwcw w w w wW W WwwwwwwwwwwwwwW WqrqrqWW
+Ww w w w w wW W Wwww w w w wwwW WrwrwrWW
+WwwcwcwcwcwwW W WwwwcwcwcwcwwwW WrwrwrWW
+Www w w w wwW W WwwwwwwwwwwwwwW WqrqrqWW
+WwwwwwwwwwwwW W Www w w w w wwW WrwrwrWW
+Wwww w w wwwW W WwwcwcwcwcwcwwW WrwrwrWW
+WwwwcwcwcwwwW W WwwwwwwwwwwwwwW WqrqrqWW
+WwwwwwwwwwwwW   Ww w w w w w wW WrwrwrWW
+WwwwwcwcwwwwWWWWWwcwcwcwcwcwcwW wrrrrrwW
+X...w w w........wwwwwwwwwwwww  P..... W
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+[/map]
+[/cave]
+
+[/game]
+[/BDCFF]
